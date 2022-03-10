@@ -1,15 +1,16 @@
 import React, { useState, useRef, useEffect } from 'react'
-import { FaBars, FaTwitter } from 'react-icons/fa'
-import { links, social } from './data'
-import logo from './logo.svg';
+import { FaBars } from 'react-icons/fa'
+import { links, social } from '../data/navData'
 
 const Navbar = () => {
   const [showLinks,setShowLinks] = useState(false);
   const linksContainerRef = useRef(null)
   const linksRef = useRef(null)
 
+  let header_log = "https://drive.google.com/uc?export=view&id=15YGcJ6NOMwlU-GTvh6uMqwZt-s-CrRzM"
+
   useEffect(() => {
-    // check heifht for links
+    // check height for links
     const linksHeight = linksRef.current.getBoundingClientRect().height;
     console.log("------ ",linksHeight); // look at DOMRect.height
     if (showLinks) {
@@ -17,13 +18,12 @@ const Navbar = () => {
     } else {
       linksContainerRef.current.style.height = '0px';
     }
-
   },[showLinks])
 
   return <nav>
     <div className="nav-center">
       <div className="nav-header">
-        <img src={logo} alt=""/>
+        <img src={header_log} height="45px" width="180px" alt=""/>
         <button className='nav-toggle' onClick={() => setShowLinks(!showLinks)}>
           <FaBars />
         </button>
@@ -32,9 +32,12 @@ const Navbar = () => {
         <ul className="links" ref={linksRef}>
           {
             links.map((link)=> {
-              const {id,url,text} = link;
-              return <li key={id}>
-                <a href={url}>{text}</a>
+              const {id,text} = link;
+              return <li key={id}  onClick={() =>  {
+                document.getElementById(text).scrollIntoView({behavior: "smooth", block: "start"})
+              }}
+              >
+                <a>{text}</a>
               </li>
             })
           }
@@ -45,7 +48,7 @@ const Navbar = () => {
           social.map((socialIcon) => {
             const {id,url,icon} = socialIcon;
             return (
-              <li key={id}>
+              <li key={id} >
                 <a href={url}>{icon}</a>
               </li>
             )
