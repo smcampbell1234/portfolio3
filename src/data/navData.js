@@ -3,9 +3,9 @@ import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa'
 export const links = [
   {
     id: 1,
-    url: '/',
-    text: 'random',
-    ref: '#random'
+    url: '/skills',
+    text: 'skills',
+    ref: '#skills'
   },
   {
     id: 2,

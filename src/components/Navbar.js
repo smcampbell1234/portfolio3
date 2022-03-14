@@ -7,7 +7,8 @@ const Navbar = () => {
   const linksContainerRef = useRef(null)
   const linksRef = useRef(null)
 
-  let header_log = "https://drive.google.com/uc?export=view&id=15YGcJ6NOMwlU-GTvh6uMqwZt-s-CrRzM"
+  // let header_logo = "https://drive.google.com/uc?export=view&id=15YGcJ6NOMwlU-GTvh6uMqwZt-s-CrRzM";
+  let header_logo = "https://drive.google.com/uc?export=view&id=1gwwZZuk0hZiOsKA3BwHzRLm2YnU8h_QF"
 
   useEffect(() => {
     // check height for links
@@ -23,7 +24,7 @@ const Navbar = () => {
   return <nav>
     <div className="nav-center">
       <div className="nav-header">
-        <img src={header_log} height="45px" width="180px" alt=""/>
+        <img src={header_logo} height="45px" width="180px" alt="header logo"/>
         <button className='nav-toggle' onClick={() => setShowLinks(!showLinks)}>
           <FaBars />
         </button>
@@ -59,4 +60,4 @@ const Navbar = () => {
   </nav>
 }
 
-export default Navbar
+export default Navbar;

@@ -4,7 +4,7 @@ import { projects } from '../data/projectsData'
 const Projects = () => {
   return (
     <React.Fragment>
-      <div id="projects" className="projects-header">
+      <div id="projects" className="section-header">
         Projects
       </div>
       <div id="projects-section" className="projects-section-container">
@@ -59,4 +59,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Projects;

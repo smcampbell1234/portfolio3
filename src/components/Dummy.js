@@ -6,9 +6,9 @@ const Dummy = () => {
       <div id="about" className="dummy" style={{backgroundColor:"#FF715B"}}>
         <h3 className="dummy-header">About</h3>
       </div>
-      <div id="skills" className="dummy" style={{backgroundColor:"#FFB400"}}>
-        <h3 className="dummy-header">Skills</h3>
-      </div>
+      {/*<div id="skills" className="dummy" style={{backgroundColor:"#FFB400"}}>*/}
+      {/*  <h3 className="dummy-header">Skills</h3>*/}
+      {/*</div>*/}
       <div id="contact" className="dummy" style={{backgroundColor:"#F0EFF4"}}>
         <h3 className="dummy-header">Contact</h3>
       </div>
