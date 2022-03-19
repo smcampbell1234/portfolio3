@@ -11,7 +11,7 @@ export const frequency_imgs = {
 export const filter_arrow = [
   'https://drive.google.com/uc?export=view&id=1WA3tedl8HpQVh58a_2F11ubMXkZwrD1c', // filter off
   'https://drive.google.com/uc?export=view&id=17rsojdNVeGIJDo4VgxsDMFXhPfRQ31kz', // filter descending
-  'https://drive.google.com/uc?export=view&id=17rsojdNVeGIJDo4VgxsDMFXhPfRQ31kz', // filter ascending
+  'https://drive.google.com/uc?export=view&id=1mKbGZFbl0yC1_MuSs4ja6eE53rA-WhP7', // filter ascending
 ]
 
 export const categories = {
@@ -28,7 +28,7 @@ export const categories = {
   "HTML5": "https://drive.google.com/uc?export=view&id=1tuCWoNfnbQb0Gg6vr6aLCAW9XAxIuHK8",
   "Java": "https://drive.google.com/uc?export=view&id=1Ox7Njs2PAXRdQaM-QKUpcPa1Rs0q1bO4",
   "Javascript": "https://drive.google.com/uc?export=view&id=1J-r94z6Mm4ta9L1Gx9HSRybaVp7Qp6pu",
-  "Jest": "https://drive.google.com/uc?export=view&id=1J-r94z6Mm4ta9L1Gx9HSRybaVp7Qp6pu",
+  "Jest": "https://drive.google.com/uc?export=view&id=1cvUBcWb8d7vcWvbu9nGJcRpGdzNrdtzk",
   "JQuery": "https://drive.google.com/uc?export=view&id=1P4-6664AyA2YqUEfF0y_fXTQZPJBlfna",
   "Kipwise": "https://drive.google.com/uc?export=view&id=1YavKx0vQAv-TYJIpudeyIplzPFYMqDox",
   "Lucid": "https://drive.google.com/uc?export=view&id=19CrYy5MV-_aNCJFn2DJ9dsIcFwjITlX6",
@@ -48,4 +48,13 @@ export const categories = {
   "Sketch": "https://drive.google.com/uc?export=view&id=1_LPsinTN3HtYYxsBiuQJzwrmbzL9TsVn",
   "Slack": "https://drive.google.com/uc?export=view&id=1tfSYzOlOTPU1R_W9fH4Pws1DduvNhM09",
   "Swagger": "https://drive.google.com/uc?export=view&id=1RSPoK4XrbO7Yp0fb7KObC1Y93oKiwu_c",
+  "Apache": "https://drive.google.com/uc?export=view&id=1FzaQ6JPNSUk1dJJhG_kKmvCn29lO-xj7",
+  "Flask": "https://drive.google.com/uc?export=view&id=1x7HgH7wwQ6LaoNNqSchEEvR3qTTK_M-y",
+  "Freshdesk": "https://drive.google.com/uc?export=view&id=1shZSFV93-ERw70qQ0xBCsrwuBlMefpSn",
+  "Linux": "https://drive.google.com/uc?export=view&id=19eRBHozWzqbAJPQfuwmZ_u8LYOkIYmmZ",
+  "MongoDB": "https://drive.google.com/uc?export=view&id=1r9EnG7ZQzV49i2RjHVF9V-6acsNrl6-n",
+  "MySQL": "https://drive.google.com/uc?export=view&id=1B_nhjkkxuwVDe_tsDaDHfxavSMEYnfXJ",
+  "PHP": "https://drive.google.com/uc?export=view&id=1Y5paPvDR0RArmlVF8v5T9HnPeFjYEwb0",
+  "Redux": "https://drive.google.com/uc?export=view&id=1ZHtETQnjxtvKoh2JTHwPHYVpGl1I-c6k",
+  "Studio 3T": "https://drive.google.com/uc?export=view&id=18J2WcRAW8gki7oLJsadc9lJAaoI9kFoM",
 }

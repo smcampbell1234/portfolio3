@@ -34,6 +34,7 @@ Variables
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-black: #222;
   --transition: all 0.3s linear;
+  --slowtransition: all 0.5s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -416,6 +417,62 @@ Footer
   color: #C8C8C8;
   cursor: pointer;
 }
+
+/* ------------------------------------------
+Skills Section Table
+------------------------------------------- */
+.skills-table-outer-wrapper {
+  overflow: hidden;
+  margin: 0 5% 0 5%;
+}
+/* ---------------
+Skills Filter Bar
+--------------- */
+.skills-filter-bar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  color: var(--clr-primary-2);
+  margin: 10px 10px 10px 10px;
+  padding: 5px 7px 5px 0px;
+  align-items: center;
+}
+.skills-refresh-wrapper {
+  display: flex;
+  flex-grow: 1;
+}
+.skills-refresh {
+  display:flex;
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+  transition: var(--transition);
+}
+.skills-refresh:hover {
+  cursor: pointer;
+  background-color: #E8E8E8;
+}
+.skills-refresh-icon {
+  padding-top: 3px;
+  margin-left: 5px;
+}
+.skills-filter-options-wrapper {
+  display: flex;
+  flex-grow: 8;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.skills-filter-option {
+  border: 1px solid var(--clr-primary-2);
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  transition: var(--transition);
+  margin: 3px 3px 3px 3px;
+  word-wrap: break-word;
+}
+.skills-filter-option:hover {
+  cursor: pointer;
+  background-color: #E8E8E8;
+}
 /* ---------------
 Skills
 --------------- */
@@ -424,13 +481,13 @@ Skills
   margin: 10px 10px 10px 10px;
   padding: 0 7px 0 7px;
 }
-.skills-filter-arrows {
+.skills-sort-arrows {
   height: 18px;
   width: 15px;
   display: inline-block;
   margin-left: 3px;
 }
-.skills-filter-arrows:hover {
+.skills-sort-arrows:hover {
   cursor: pointer;
 }
 .skills-header-row {
@@ -442,22 +499,43 @@ Skills
   border-bottom: 2px solid var(--clr-primary-2);
   padding: 10px 0 10px 0;
 }
+.skill-row-wrapper {
+  border-bottom: 1px solid var(--clr-grey-7);
+  transition: var(--slowtransition);
+}
+.skill-row-gray {
+  background-color: var(--clr-grey-10)
+}
+.skill-row-wrapper:hover {
+  cursor: pointer;
+  background-color: var(--clr-grey-9);
+}
 .skills-row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  border-bottom: 1px solid var(--clr-grey-7);
   padding: 10px 0 0px 0;
   font-size: 1.1rem;
 }
 .skills-row-item {
   flex: 1;
 }
+.skills-show-details-btn {
+  color: var(--clr-primary-5);
+  transition: var(--slowtransition);
+  flex-grow: 1;
+  margin: 0 3px 0 3px;
+  text-align: center;
+}
+.skills-show-details-btn:hover {
+  cursor: pointer;
+  color: var(--clr-primary-8)
+}
 .skills-proficiency-score {
   background-color: white;
   display: inline-block;
   padding-right: 5px;
-  font-size: .8rem;
+  font-size: .9rem;
   font-weight: bold;
 }
 .skill-col {
@@ -472,12 +550,7 @@ Skills
 .skills-skill-col {
   display: flex;
 }
-.skills-skill-img {
-  /*outline: 1px solid blue;*/
-  padding-top: 4px;
-}
 .skills-skill-txt {
-  /*outline: 1px solid blue;*/
   margin-left: 4px;
 }
 .skills-category {
@@ -486,6 +559,46 @@ Skills
   padding: 1px 5px 1px 5px;
   margin: 0px 3px 3px 0;
   display: inline-block;
+}
+/* ---------------
+Skill Detail
+--------------- */
+.skills-row-detail {
+  font-size: 1.1rem;
+  padding: 8px 8px 8px 35px;
+}
+.skills-detail-title {
+  color: var(--clr-primary-2);
+  font-size: 1.4rem;
+}
+/* ---------------
+Skill Pager Bar
+--------------- */
+.skill-pager-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 10px 10px 10px;
+  color: var(--clr-primary-2);
+  font-size: 1.2rem;
+}
+.skills-show-wrapper {
+  display: flex;
+}
+.skills-show-option {
+  margin-left: 15px;
+  transition: var(--slowtransition);
+  padding-top: 1px;
+  border-radius: 60px;
+  width: 34px;
+  height: 31px;
+  text-align: center;
+}
+.skills-show-option:hover {
+  cursor: pointer;
+  color: var(--clr-grey-7);
+}
+.option-selected {
+  color: var(--clr-grey-8);
 }
 /* ---------------
 Placeholder
