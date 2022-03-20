@@ -4,8 +4,9 @@ import { projects } from '../data/projectsData'
 const Projects = () => {
   return (
     <React.Fragment>
-      <div id="projects" className="section-header">
-        Projects
+      <div id="projects" className="section-header-wrapper">
+        <div className="section-header">Projects</div>
+        <div className="section-subheader">Feature projects demonstrate coding skills.</div>
       </div>
       <div id="projects-section" className="projects-section-container">
         {

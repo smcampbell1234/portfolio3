@@ -5,6 +5,7 @@ import Dummy from './components/Dummy'
 import Footer from './components/Footer'
 import Intro from './components/Intro'
 import Skills from './components/Skills'
+import Demo from './components/Demo'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Intro />
       <Dummy />
+      <Demo />
       <Projects />
       <Skills />
       <Footer />

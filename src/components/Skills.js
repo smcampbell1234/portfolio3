@@ -127,7 +127,10 @@ const Skills = () => {
 
   return (
     <React.Fragment>
-      <div id="skills" className="section-header">Skills</div>
+      <div id="skills" className="section-header-wrapper">
+        <div className="section-header">Skills</div>
+        <div className="section-subheader">Hard skills that can be filtered by category.</div>
+      </div>
       <div className="skills-table-outer-wrapper">
         <div className="skills-filter-bar-wrapper">
           <div className="skills-refresh-wrapper" >

@@ -9,9 +9,9 @@ export const links = [
   },
   {
     id: 2,
-    url: '/about',
-    text: 'about',
-    ref: '#about'
+    url: '/demo',
+    text: 'demo',
+    ref: '#demo'
   },
   {
     id: 3,
