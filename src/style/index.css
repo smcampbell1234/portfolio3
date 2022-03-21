@@ -45,6 +45,7 @@ Variables
 
   --border-radius: 5px;
   --border-color: hsl(211, 27%, 70%);
+  --chip-margin: 0 3% 0 3%;
 }
 /* ---------------
 Global Styles
@@ -254,10 +255,11 @@ Intro Section
 Project Chip
 --------------- */
 .projects-section-container {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  /*margin: 0 4% 0 4%;*/
+  margin: var(--chip-margin);
 }
 .proj-container {
   display: flex;
@@ -434,7 +436,7 @@ Skills Section Table
 ------------------------------------------- */
 .skills-table-outer-wrapper {
   overflow: hidden;
-  margin: 0 3% 0 3%;
+  margin: var(--chip-margin);
 }
 /* ---------------
 Skills Filter Bar
@@ -615,11 +617,10 @@ Skill Pager Bar
 Demo Section
 --------------- */
 .demo-section-wrapper {
-  margin: 0 5% 0 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 3% 0 3%;
+  margin: var(--chip-margin);
 }
 .demo-chip-wrapper {
   border: 1px solid var(--border-color);
@@ -627,8 +628,8 @@ Demo Section
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  margin: 10px 10px 0 0;
-  max-width: 49%;
+  margin: 5px 5px 5px 5px;
+  max-width: 500px;
   transition: var(--slugslowtransition);
 }
 .demo-chip-wrapper:hover {
@@ -686,7 +687,7 @@ Placeholder
 
 @media only screen and (max-width: 1040px) {
   .demo-chip-wrapper {
-    max-width: 98%;
+    max-width: 500px;
   }
 }
 
@@ -708,16 +709,15 @@ Placeholder
     justify-content: space-around;
     width: 100%;
   }
-  .demo-chip-thumbnail {
-    outline: 1px solid blue;
-    display: block;
-  }
+  /*.demo-chip-thumbnail {*/
+  /*  */
+  /*}*/
   .demo-chip-tile {
     text-align: center;
     font-size: 1.1rem;
   }
   .demo-chip-thumbnail {
-    outline: 1px solid red;
+    display: block;
     width: 40%;
     height:70%
   }
