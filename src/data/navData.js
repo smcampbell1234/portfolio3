@@ -27,9 +27,9 @@ export const links = [
   },
   {
     id: 5,
-    url: '/profile',
-    text: 'profile',
-    ref: '#profile'
+    url: '/badges',
+    text: 'badges',
+    ref: '#badges'
   },
 
 ]

@@ -669,6 +669,89 @@ Demo Section
 .demo-chip-detail {
   word-wrap: wrap;
 }
+
+/* ---------------
+Badges Section
+--------------- */
+.container {
+  display: flex;
+  overflow-x: auto;
+  margin: var(--chip-margin);
+}
+.badge-wrapper {
+  margin: 5px 60px 4px 60px;
+}
+.badge-img-wrapper img {
+  width: 250px;
+  height: 210px;
+}
+.badge-txt {
+  text-align: center;
+  margin-top: 25px;
+}
+
+/* ---------------
+Contact Section
+--------------- */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin: var(--chip-margin);
+}
+.contact-google-map_wrapper {
+  width: 65%;
+  display: flex;
+  justify-content: flex-end;
+}
+.contact-google-iframe {
+  /*width: 75%;*/
+  /*max-width: 600px;*/
+}
+.contact-form {
+  width: 30%;
+  max-width: 500px;
+  padding: 10px;
+  color: var(--clr-primary-2);
+  /*max-width: 700px;*/
+}
+.contact-form-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  width: 100%;
+}
+.contact-form-subtitle {
+  width: 100%;
+}
+
+.contact-form-label {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  width: 100%;
+}
+.contact-form-input {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  height: 35px;
+  font-size: 1.4rem;
+  margin-top: 5px;
+}
+.contact-form-submit {
+  font-size: 1.4rem;
+  width: 100%;
+  margin-top: 25px;
+  background-color: var(--clr-primary-2);
+  color: white;
+  height: 35px;
+  border-radius: 5px;
+  transition: var(--slowtransition);
+}
+.contact-form-submit:hover {
+  cursor: pointer;
+  background-color: var(--clr-primary-3);
+}
 /* ---------------
 Placeholder
 --------------- */
@@ -682,8 +765,6 @@ Placeholder
 .dummy-header {
   word-wrap: break-word
 }
-
-
 
 @media only screen and (max-width: 1040px) {
   .demo-chip-wrapper {
@@ -719,6 +800,21 @@ Placeholder
   .demo-chip-thumbnail {
     display: block;
     width: 40%;
-    height:70%
+    height:70%;
+  }
+
+  /* ---------------
+  Badges Section
+  --------------- */
+  .badge-wrapper {
+    margin: 5px 20px 4px 20px;
+  }
+  .badge-img-wrapper img {
+    width: 150px;
+    height: 110px;
+  }
+  .badge-txt {
+    margin-top: 7px;
+    font-size: .8rem;
   }
 }

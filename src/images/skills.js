@@ -58,3 +58,17 @@ export const categories = {
   "Redux": "https://drive.google.com/uc?export=view&id=1ZHtETQnjxtvKoh2JTHwPHYVpGl1I-c6k",
   "Studio 3T": "https://drive.google.com/uc?export=view&id=18J2WcRAW8gki7oLJsadc9lJAaoI9kFoM",
 }
+
+export const badge_images = {
+  "1000": "https://drive.google.com/uc?export=view&id=1LkMHrpsyMpGw-DToMifHA32KyI3AnVm_",
+  "2500": "https://drive.google.com/uc?export=view&id=14PkEBjCA6N28gVcUnwHuLfqLbMWZaKj9",
+  "5000": "https://drive.google.com/uc?export=view&id=1mcQx7onYqkHzuEZtdiACcNna_QlgePVg",
+  "7500": "https://drive.google.com/uc?export=view&id=1L7EFHp3xidURmYds2sp4XcYuAqRvALyE",
+  "10000": "https://drive.google.com/uc?export=view&id=1HpFRsk8tMrYZHeN1zyy8jonZlZObcCUY",
+  "10000gray": "https://drive.google.com/uc?export=view&id=1OWnJNipIJo-uMev360wKs2tr3C6RcnH5",
+  "30day": "https://drive.google.com/uc?export=view&id=1wfz0QYDfW-pnmtd1wz6eifsDgzrdExXT",
+  "30day3x": "https://drive.google.com/uc?export=view&id=1rsz6eFHosBWIhJ6PCQkl_6VFcOtl3yAl",
+  "60daygray": "https://drive.google.com/uc?export=view&id=1B7OGV6GL9eL2h0Ed8sEkNdjXDaGVMCq1",
+  "200stories": "https://drive.google.com/uc?export=view&id=17sSZJA3xWNPjvkP8zx9gusj2jv1C4WLk",
+  "under_construction": "https://drive.google.com/uc?export=view&id=1z0RMOLxPO8a4Oq0njJQIqC03ROSiAIzG",
+}
