@@ -22,7 +22,7 @@ const Skills = () => {
   const [filterList,setFilterList] = useState([])
   const [selectedSkills,setSelectedSkills] = useState([])
   const [showDetails,setShowDetails] = useState(false)
-  const [rowCount,setRowCount] = useState(15)
+  const [rowCount,setRowCount] = useState(10)
 
 
   // **************** handlers ****************
@@ -241,7 +241,7 @@ const Skills = () => {
         <div className="skill-pager-wrapper">
           <div className="skills-show-wrapper">
             <div>Show</div>
-            <div className={`skills-show-option ${rowCount === 15 ? "option-selected" : null}`} onClick={() => setRowCount(15)}>15</div>
+            <div className={`skills-show-option ${rowCount === 10 ? "option-selected" : null}`} onClick={() => setRowCount(10)}>10</div>
             <div className={`skills-show-option ${rowCount === 25 ? "option-selected" : null}`} onClick={() => setRowCount(25)}>25</div>
             <div className={`skills-show-option ${rowCount === 50 ? "option-selected" : null}`} onClick={() => setRowCount(50)}>50</div>
             <div className={`skills-show-option ${rowCount === 99 ? "option-selected" : null}`} onClick={() => setRowCount(99)}>all</div>

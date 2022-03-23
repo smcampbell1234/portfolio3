@@ -160,7 +160,6 @@ Navbar
 --------------- */
 nav {
   background: var(--clr-white);
-  /*box-shadow: var(--light-shadow);*/
   border-bottom: 2px solid lightgray;
 }
 .nav-header {
@@ -212,6 +211,62 @@ nav {
 .show-container {
   height: 10rem;
 }
+/**** mode toggle ****/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  /*height: 26px;*/
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: var(--clr-primary-5);
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 15px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 /* ---------------
 Intro Section
 --------------- */
@@ -241,16 +296,9 @@ Intro Section
   margin-top: 15px;
 }
 .intro-header {
-  color: var(--clr-primary-2)
+    color: var(--clr-primary-2);
+    font-size: 3.0rem;
 }
-
-
-
-
-
-
-
-
 /* ---------------
 Project Chip
 --------------- */
@@ -294,7 +342,7 @@ Project Chip
   padding: 8px 5px 8px 5px;
   border: 1px solid gray;
   border-radius: 10px;
-  margin: 0px 0px 10px 0px;
+  margin: 0 0 10px 0;
 }
 .proj-callout-header {
   font-weight: bold;
@@ -349,12 +397,10 @@ Projects Footer Links
 
 @media screen and (min-width: 800px) {
   .nav-center {
-    /*max-width: 1170px;*/
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /*justify-content: space-between;*/
     padding: 1rem;
   }
   .nav-header {
@@ -447,7 +493,7 @@ Skills Filter Bar
   font-size: 1.4rem;
   color: var(--clr-primary-2);
   margin: 10px 10px 10px 10px;
-  padding: 5px 7px 5px 0px;
+  padding: 5px 7px 5px 0;
   align-items: center;
 }
 .skills-refresh-wrapper {
@@ -527,7 +573,7 @@ Skills
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 10px 0 0px 0;
+  padding: 10px 0 0 0;
   font-size: 1.1rem;
 }
 .skills-row-item {
@@ -570,7 +616,7 @@ Skills
   border: 1px solid black;
   border-radius: 20px;
   padding: 1px 5px 1px 5px;
-  margin: 0px 3px 3px 0;
+  margin: 0 3px 3px 0;
   display: inline-block;
 }
 /* ---------------
@@ -644,7 +690,6 @@ Demo Section
 .demo-chip-thumbnail img {
   width: 100%;
   height: 100%;
-  /*height: 130px;*/
   object-fit: cover;
 }
 .demo-chip-content {
@@ -658,18 +703,17 @@ Demo Section
 .demo-chip-tile {
   color: var(--clr-primary-2);
   font-weight: bold;
-  font-size: 1.2remp;
+  font-size: 1.2rem;
 }
 .demo-chip-callouttext {
   font-style: italic;
   color: var(--clr-grey-5);
   font-size: .9rem;
-  word-wrap: wrap;
+  word-wrap: break-word;
 }
 .demo-chip-detail {
-  word-wrap: wrap;
+  word-wrap: break-word;
 }
-
 /* ---------------
 Badges Section
 --------------- */
@@ -678,8 +722,23 @@ Badges Section
   overflow-x: auto;
   margin: var(--chip-margin);
 }
+.container::-webkit-scrollbar {    display: none;}
 .badge-wrapper {
   margin: 5px 60px 4px 60px;
+}
+.badge-progress-bar-outer {
+  margin-left: auto;
+  margin-right: auto;
+  /*border: 1px solid black;*/
+  height: 13px;
+  width: 100px;
+  background-color: lightgray;
+  border-radius: 7px;
+}
+.badge-progress-bar-inner {
+  background-color: var(--clr-green-dark);
+  height: 13px;
+  border-radius: 7px;
 }
 .badge-img-wrapper img {
   width: 250px;
@@ -703,118 +762,159 @@ Contact Section
   width: 65%;
   display: flex;
   justify-content: flex-end;
+  position: relative;
+  margin-right: 15px;
 }
-.contact-google-iframe {
-  /*width: 75%;*/
-  /*max-width: 600px;*/
+.contact-info-box-left {
+    position: absolute;
+    background-color: black;
+    bottom: 15px;
+    left: 65px;
+    opacity: .7;
+    padding: 15px;
+    border-radius: 5px;
+}
+.contact-info-box-right {
+    margin: 15px 0 10px 0;
+    background-color: black;
+    bottom: 15px;
+    left: 65px;
+    opacity: .7;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+}
+.contact-info-txt {
+    opacity: 1.0;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    margin-top: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 .contact-form {
-  width: 30%;
-  max-width: 500px;
-  padding: 10px;
-  color: var(--clr-primary-2);
-  /*max-width: 700px;*/
+    width: 30%;
+    max-width: 500px;
+    padding: 10px;
+    color: var(--clr-primary-2);
 }
 .contact-form-title {
-  font-size: 1.6rem;
-  font-weight: bold;
-  width: 100%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    width: 100%;
 }
 .contact-form-subtitle {
-  width: 100%;
+    width: 100%;
 }
-
 .contact-form-label {
-  display: block;
-  margin-top: 10px;
-  font-size: 1.2rem;
-  width: 100%;
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    width: 100%;
 }
 .contact-form-input {
-  display: block;
-  width: 100%;
-  border-radius: 5px;
-  height: 35px;
-  font-size: 1.4rem;
-  margin-top: 5px;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    height: 35px;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    border: 2px solid var(--clr-primary-2);
+}
+.contact-message {
+    height: 120px;
 }
 .contact-form-submit {
-  font-size: 1.4rem;
-  width: 100%;
-  margin-top: 25px;
-  background-color: var(--clr-primary-2);
-  color: white;
-  height: 35px;
-  border-radius: 5px;
-  transition: var(--slowtransition);
+    font-size: 1.4rem;
+    width: 100%;
+    margin-top: 25px;
+    background-color: var(--clr-primary-2);
+    color: white;
+    height: 50px;
+    border-radius: 5px;
+    transition: var(--slowtransition);
 }
 .contact-form-submit:hover {
-  cursor: pointer;
-  background-color: var(--clr-primary-3);
+    cursor: pointer;
+    background-color: var(--clr-primary-3);
 }
 /* ---------------
 Placeholder
 --------------- */
 .dummy {
-  background-color: tan;
-  width: 100%;
-  height: 600px;
-  text-align: center;
-  overflow: hidden;
+    background-color: tan;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    overflow: hidden;
 }
 .dummy-header {
-  word-wrap: break-word
+    word-wrap: break-word
 }
 
 @media only screen and (max-width: 1040px) {
   .demo-chip-wrapper {
-    max-width: 500px;
+        max-width: 500px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .demo-chip-wrapper {
-    border: 1px solid var(--border-color);
-    border-radius: var(--border-radius);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
-    max-width: 100%;
-    align-items: center;
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        max-width: 100%;
+        align-items: center;
   }
   .demo-chip-content {
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
   }
   /*.demo-chip-thumbnail {*/
   /*  */
   /*}*/
   .demo-chip-tile {
-    text-align: center;
-    font-size: 1.1rem;
+        text-align: center;
+        font-size: 1.1rem;
   }
   .demo-chip-thumbnail {
-    display: block;
-    width: 40%;
-    height:70%;
+        display: block;
+        width: 40%;
+        height:70%;
   }
 
   /* ---------------
   Badges Section
   --------------- */
   .badge-wrapper {
-    margin: 5px 20px 4px 20px;
+        margin: 5px 20px 4px 20px;
   }
   .badge-img-wrapper img {
-    width: 150px;
-    height: 110px;
+        width: 150px;
+        height: 110px;
   }
   .badge-txt {
-    margin-top: 7px;
-    font-size: .8rem;
+        margin-top: 7px;
+        font-size: .8rem;
   }
+  /* ---------------
+  Contact Section
+  --------------- */
+    .contact-google-map_wrapper {
+            display: none;
+    }
+
+    .contact-info-box-right {
+            display: block;
+    }
+    .contact-form {
+            width: 100%;
+    }
 }

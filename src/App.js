@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Navbar from './components/Navbar'
 import Projects from './components/Projects'
 import Dummy from './components/Dummy'
@@ -10,15 +10,16 @@ import Badges from './components/Badges'
 import Contact from './components/Contact'
 
 function App() {
+  const [isTradMode,setIsTradMode] = useState(false)
   return (
     <>
-      <Navbar />
-      <Intro />
-      <Badges />
-      <Dummy />
-      <Demo />
+      <Navbar isTradMode={isTradMode} setIsTradMode={setIsTradMode}/>
+      <Intro isTradMode={isTradMode} />
       <Projects />
+      <Demo />
+      <Badges />
       <Skills />
+      {/*<Dummy />*/}
       <Contact />
       <Footer />
     </>

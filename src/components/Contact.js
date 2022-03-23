@@ -5,6 +5,26 @@ const Contact = () => {
   const [email,setEmail] = useState("")
   const [message,setMessage] = useState("")
 
+  function encode(data) {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    alert("send email is currently not hooked up. Please send me direct by email: seanmc2009@gmail.com, Thank You.")
+    // fetch("/", {
+    //   method: "POST",
+    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //   body: encode({ "form-name": "contact", name, email, message }),
+    // })
+    //   .then(() => alert("Message sent!"))
+    //   .catch((error) => alert(error));
+  }
+
   return (
     <React.Fragment>
       <div id="contact" className="section-header-wrapper">
@@ -24,14 +44,26 @@ const Contact = () => {
             style={{ filter: "opacity(0.7)" }}
             src="https://www.google.com/maps/embed/v1/place?q=point+loma+san+diego&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
+          <div className="contact-info-box-left">
+            <div className="contact-info-txt">seanmc2009@gmail.com</div>
+            <div className="contact-info-txt">San Diego, CA</div>
+          </div>
         </div>
         <div className="contact-form">
-          <form>
+          <form
+            // netlify
+            name="contact"
+            onSubmit={handleSubmit}
+          >
             <div className="contact-form-title">
               Hire Me
             </div>
             <div className="contact-form-subtitle">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a justo et nisl pretium bibendum vel et nisi. Etiam libero felis, tincidunt sed mi sit amet, condimentum ornare risus. Sed ac dapibus lacus, lob
+            </div>
+            <div className="contact-info-box-right">
+              <div className="contact-info-txt">seanmc2009@gmail.com</div>
+              <div className="contact-info-txt">San Diego, CA</div>
             </div>
             <div>
               <label htmlFor="name" className="contact-form-label">
@@ -61,10 +93,10 @@ const Contact = () => {
               <label htmlFor="message" className="contact-form-label">
                 Message
               </label>
-              <input
+              <textarea
                 type="text"
                 id="email"
-                className="contact-form-input"
+                className="contact-form-input contact-message"
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>

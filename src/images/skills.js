@@ -71,4 +71,12 @@ export const badge_images = {
   "60daygray": "https://drive.google.com/uc?export=view&id=1B7OGV6GL9eL2h0Ed8sEkNdjXDaGVMCq1",
   "200stories": "https://drive.google.com/uc?export=view&id=17sSZJA3xWNPjvkP8zx9gusj2jv1C4WLk",
   "under_construction": "https://drive.google.com/uc?export=view&id=1z0RMOLxPO8a4Oq0njJQIqC03ROSiAIzG",
+
+
+  "fremp_on": "https://drive.google.com/uc?export=view&id=1p2BBwDaTAI6Bi9YzvVMEhvayoWq94jKf",
+  "fremp_off": "https://drive.google.com/uc?export=view&id=10A025C4UpvMtEGxLYIovDYMafBOJ5LSK",
+  "standup_on": "https://drive.google.com/uc?export=view&id=1jhUr1cQ2CTkVE5-Pd8eCHBFhV9j4au-F",
+  "standup_off": "https://drive.google.com/uc?export=view&id=1jhUr1cQ2CTkVE5-Pd8eCHBFhV9j4au-F",
+  "10000devhrs_on": "https://drive.google.com/uc?export=view&id=1NY_S6bPAPgakjNuEsL5s2YCT6XUnDS7Z",
+  "10000devhrs_off": "https://drive.google.com/uc?export=view&id=1X2AyH9VO_rVMbQhn3bhZ-o6EplLB_HsJ",
 }

@@ -1,10 +1,16 @@
 import React from 'react'
 
-let intro_photo = "https://drive.google.com/uc?export=view&id=1fgsIFRbUxrR6j0puc1gZDo-T7ertuPPy";
-const Intro = () => {
+const Intro = (props) => {
+  const {isTradMode} = props;
+
+  let intro_photo = isTradMode ?
+    "https://drive.google.com/uc?export=view&id=1fgsIFRbUxrR6j0puc1gZDo-T7ertuPPy" // coder
+    :
+    "https://drive.google.com/uc?export=view&id=17HtbxYb78V1E3XS7NacPLDf904vVefA5"; // space man
+
+
   return (
     <div id="intro-section" className="intro-section-holder">
-
       <div className="intro-image-holder">
         <img src={intro_photo} alt="intro image"  />
       </div>

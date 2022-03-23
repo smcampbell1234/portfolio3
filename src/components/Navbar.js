@@ -2,7 +2,8 @@ import React, { useState, useRef, useEffect } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { links, social } from '../data/navData'
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const {isTradMode, setIsTradMode} = props;
   const [showLinks,setShowLinks] = useState(false);
   const linksContainerRef = useRef(null)
   const linksRef = useRef(null)
@@ -43,6 +44,16 @@ const Navbar = () => {
             })
           }
         </ul>
+      </div>
+      <div>
+        <label className="switch">
+          <input
+            type="checkbox"
+            value={isTradMode}
+            onChange={() => setIsTradMode(!isTradMode)}
+          />
+            <span className="slider round"></span>
+        </label>
       </div>
       <ul className="social-icons">
         {
