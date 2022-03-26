@@ -80,3 +80,8 @@ export const badge_images = {
   "10000devhrs_on": "https://drive.google.com/uc?export=view&id=1NY_S6bPAPgakjNuEsL5s2YCT6XUnDS7Z",
   "10000devhrs_off": "https://drive.google.com/uc?export=view&id=1X2AyH9VO_rVMbQhn3bhZ-o6EplLB_HsJ",
 }
+
+export const demo_images = {
+  "oncall_scheduler_mvp": "https://drive.google.com/uc?export=view&id=1nyd0dVYeGKNI7ErSPQa9mPffIw9Cq_pw",
+  "shift_editor_rates": "https://drive.google.com/uc?export=view&id=1b2ZPisXgdQOGctQT3U_J2wbYJbkAeEqd",
+}

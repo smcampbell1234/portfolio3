@@ -321,7 +321,9 @@ Project Chip
   overflow: hidden;
 }
 .proj-header img {
-   width: 100%;
+  max-width: 500px;
+  height: 200px;
+  object-fit: fill;
  }
 .proj-body {
   margin: 5px 5px 5px 5px;
@@ -671,8 +673,6 @@ Demo Section
 .demo-chip-wrapper {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
-  display: flex;
-  justify-content: space-between;
   padding: 10px;
   margin: 5px 5px 5px 5px;
   max-width: 500px;
@@ -682,15 +682,25 @@ Demo Section
   background-color: var(--clr-grey-9);
   cursor: pointer;
 }
+
+.demo-chip-top {
+  display: flex;
+  justify-content: space-between;
+}
 .demo-chip-thumbnail {
-  flex-grow: 1;
   margin-right: 2%;
-  width: 25%;
+  width: 49%;
 }
 .demo-chip-thumbnail img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 200px;
+  object-fit: fill;
+}
+.demo-chip-top-text {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .demo-chip-content {
   flex-grow: 2;
@@ -698,7 +708,7 @@ Demo Section
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 75%;
+  width: 55%;
 }
 .demo-chip-tile {
   color: var(--clr-primary-2);
@@ -714,22 +724,112 @@ Demo Section
 .demo-chip-detail {
   word-wrap: break-word;
 }
+
+/* ---------------
+Demo Detail
+--------------- */
+.demo-detail-outer-wrapper {
+  display: flex;
+  justify-content: center;
+  outline: 1px solid green;
+}
+.demo-detail-header {
+  text-align: center;
+  margin-top: 15px;
+}
+.demo-detail-wrapper {
+  width: 100%;
+  margin-left: 4%;
+  margin-right: 4%;
+  max-width: 1200px;
+}
+.demo-media-wrapper {
+  width: 100%;
+  height: 500px;
+  max-width: 1000px;
+  background-color: gray;
+  display: flex;
+}
+.demo-media-wrapper iframe {
+  width: 100%;
+}
+.demo-detail-section-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.demo-media-link {
+  font-size: .7rem;
+  font-style: italic;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+.demo-detail-section-asside {
+  font-size: 1.1rem;
+  font-style: italic;
+  /*margin-top: 2px;*/
+}
+.demo-detail-section-text {
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+.two-cols {
+  display:flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.small-col {
+  flex-grow: 1;
+  width: 44%;
+}
+.big-col {
+  flex-grow: 4;
+  width: 53%;
+}
+.margin-top {
+  margin-top: 15px;
+}
+/****Demo Detail Responsive Image ****/
+.flexible-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.flexible-container iframe,
+.flexible-container object,
+.flexible-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.flexible-image {
+  width: 100%;
+  height: auto;
+}
 /* ---------------
 Badges Section
 --------------- */
 .container {
   display: flex;
   overflow-x: auto;
+  /*justify-content: center;*/
   margin: var(--chip-margin);
 }
 .container::-webkit-scrollbar {    display: none;}
 .badge-wrapper {
   margin: 5px 60px 4px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;
 }
 .badge-progress-bar-outer {
   margin-left: auto;
   margin-right: auto;
-  /*border: 1px solid black;*/
   height: 13px;
   width: 100px;
   background-color: lightgray;
@@ -870,26 +970,23 @@ Placeholder
         max-width: 100%;
         align-items: center;
   }
-  .demo-chip-content {
-        padding: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 100%;
-  }
-  /*.demo-chip-thumbnail {*/
-  /*  */
-  /*}*/
   .demo-chip-tile {
         text-align: center;
         font-size: 1.1rem;
   }
-  .demo-chip-thumbnail {
-        display: block;
-        width: 40%;
-        height:70%;
+  .demo-chip-top {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
   }
-
+  .demo-chip-detail {
+    display: none;
+  }
+  .demo-chip-thumbnail img {
+    width: 100%;
+    height: 100px;
+    object-fit: fill;
+  }
   /* ---------------
   Badges Section
   --------------- */

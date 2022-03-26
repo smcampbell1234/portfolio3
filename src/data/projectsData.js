@@ -80,4 +80,19 @@ export const projects = [
       {text: "source", url: 'https://www.twitter.com', icon: <AiFillGithub />,},
     ]
   },
+  {
+    id: 106,
+    banner: "https://drive.google.com/uc?export=view&id=1FlD1_VDGs-ahI4aGQQWbsB49RDXJGLi5",
+    title: 'Aide Plus - Documentation and Networking App',
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit tortor sit amet urna dignissim consequat at a libero. Vestibulum ante ipsum primis in faucibus orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit tortor sit amet urna dignissim consequat at a libero. Vestibulum ante ipsum primis in faucibus orci.",
+    callouttitle: "TECHNOLOGY",
+    callouttext: "Full Stack, React JS, Hooks, Python, Mongo NoSQL DB, notifications, Sass, HTML 5, CSS 3, Full Stack, React JS, Hooks, Python, Mongo NoSQL DB, notifications, Sass, HTML 5, CSS 3 Full Stack, React JS, Hooks, Python, Mongo NoSQL DB, notifications, Sass, HTML 5, CSS 3",
+    button1text: "App Details",
+    button2text: "Open App",
+    footerlinks: [
+      {text: "snippet", url: 'https://www.twitter.com', icon: <FiCodesandbox />,},
+      {text: "docs", url: 'https://www.twitter.com', icon: <SiNotion />,},
+      {text: "source", url: 'https://www.twitter.com', icon: <AiFillGithub />,},
+    ]
+  },
 ]

@@ -8,15 +8,25 @@ import Skills from './components/Skills'
 import Demo from './components/Demo'
 import Badges from './components/Badges'
 import Contact from './components/Contact'
+import DemoDetail from './components/DemoDetail'
 
 function App() {
   const [isTradMode,setIsTradMode] = useState(false)
+  const [demoId,setDemoId] = useState(null)
+
+  let isDetail = demoId;
+
+  // return <DemoDetail demoId={201} setDemoId={setDemoId} />
+  if (demoId) return <DemoDetail demoId={demoId} setDemoId={setDemoId} />
+
+
   return (
     <>
-      <Navbar isTradMode={isTradMode} setIsTradMode={setIsTradMode}/>
+      <Navbar isTradMode={isTradMode} setIsTradMode={setIsTradMode} isDetail={isDetail}/>
+      {/*<div style={{height:"100px"}} />*/}
       <Intro isTradMode={isTradMode} />
       <Projects />
-      <Demo />
+      <Demo setDemoId={setDemoId} />
       <Badges />
       <Skills />
       {/*<Dummy />*/}
