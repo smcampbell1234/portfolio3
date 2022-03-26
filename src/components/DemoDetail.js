@@ -57,14 +57,14 @@ const DemoDetail = (props) => {
           <h1 className="demo-detail-header">{demo.title}</h1>
           {
             demo.details.map((item,idx) => {
-              let {text,type} = item;
+              let {text1,text2,type} = item;
               if (type === "text-wide-bottom") {
                 return (
                   <div>
                     { renderMedia(idx) }
                     { renderTitle(idx)}
                     <div className="demo-detail-section-text">
-                      {text}
+                      {text1}
                     </div>
                   </div>
                 )
@@ -74,7 +74,7 @@ const DemoDetail = (props) => {
                   <div>
                     { renderTitle(idx)}
                     <div className="demo-detail-section-text">
-                      {text}
+                      {text1}
                     </div>
                     { renderMedia(idx) }
                   </div>
@@ -86,7 +86,7 @@ const DemoDetail = (props) => {
                     { renderTitle(idx)}
                     <div className="two-cols">
                       <div style={{marginRight:"15px"}} className="small-col">
-                        {text}
+                        {text1}
                       </div>
                       <div className="big-col">
                         { renderMedia(idx) }
@@ -105,7 +105,7 @@ const DemoDetail = (props) => {
                         { renderMedia(idx) }
                       </div>
                       <div className="small-col">
-                        {text}
+                        {text1}
                       </div>
                     </div>
                   </div>
@@ -117,10 +117,10 @@ const DemoDetail = (props) => {
                       { renderTitle(idx)}
                       <div className="two-cols">
                         <div>
-                          {text}
+                          {text1}
                         </div>
                         <div>
-                          {text}
+                          {text2}
                         </div>
                       </div>
                     </div>

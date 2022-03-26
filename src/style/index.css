@@ -785,6 +785,11 @@ Demo Detail
 .big-col {
   flex-grow: 4;
   width: 53%;
+  background-color: #F8F8F8;
+}
+.big-col img {
+  max-height: 300px;
+  object-fit: scale-down;
 }
 .margin-top {
   margin-top: 15px;

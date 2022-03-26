@@ -82,6 +82,14 @@ export const badge_images = {
 }
 
 export const demo_images = {
-  "oncall_scheduler_mvp": "https://drive.google.com/uc?export=view&id=1nyd0dVYeGKNI7ErSPQa9mPffIw9Cq_pw",
-  "shift_editor_rates": "https://drive.google.com/uc?export=view&id=1b2ZPisXgdQOGctQT3U_J2wbYJbkAeEqd",
+  "oncall_scheduler_media_link": "https://youtu.be/p6go2GSJ4FM",
+  "oncall_scheduler_media_embed_link": "https://www.youtube.com/embed/p6go2GSJ4FM",
+  "oncall_scheduler_mvp_thumbnail": "https://drive.google.com/uc?export=view&id=1nyd0dVYeGKNI7ErSPQa9mPffIw9Cq_pw",
+  "oncall_prototypes": "https://drive.google.com/uc?export=view&id=1COPAHP-Sn883u_67OBB3tQDJeYlVnY_q",
+  "oncall_state_tracking": "https://drive.google.com/uc?export=view&id=16hkzS4kWC8WEwsfSK3sQnS-wcCEaaWx1",
+  "oncall_proto_light_floating_chip": "https://drive.google.com/uc?export=view&id=1tLVkOjQe2rBoSFevEhNI9akx4mPzYiEg",
+  "oncall_proto_shift_detail": "https://drive.google.com/uc?export=view&id=1rQLSPWmTPz_8lXA5l6ySDESVBRE1rrje",
+  "oncall_proto_shift_detail_wire": "https://drive.google.com/uc?export=view&id=1flpt5RFRx6nzZWYIgMurYcRvSSuA1lbr",
+
+  "shift_editor_rates_thumbnail": "https://drive.google.com/uc?export=view&id=1b2ZPisXgdQOGctQT3U_J2wbYJbkAeEqd",
 }
