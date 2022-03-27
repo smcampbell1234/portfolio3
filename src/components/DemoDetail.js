@@ -20,7 +20,7 @@ const DemoDetail = (props) => {
       if (media === "video") {
         return (
           <div class="margin-top">
-            <div className="flexible-container">
+            <div className="flexible-container flexible-margin-demo">
               <iframe width="425" height="350" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" src={media_embed_link}></iframe>
             </div>
             <div className="demo-media-link">{media_link}</div>

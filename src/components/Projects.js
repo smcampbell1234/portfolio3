@@ -15,8 +15,8 @@ const Projects = () => {
             return (
               <div key={idx} id={uniqueId} className="proj-container">
                 <div>
-                  <div className="proj-header">
-                    <img src={proj.banner} alt={proj.title}/>
+                  <div className="flexible-container flexible-margin-projects">
+                    <img src={proj.banner} alt={proj.title} className="flexible-image"/>
                   </div>
                   <div id="project-body" className="proj-body">
                     <div className="proj-title">

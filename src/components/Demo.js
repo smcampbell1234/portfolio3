@@ -23,7 +23,7 @@ const Demo = (props) => {
                 <div className="demo-chip-top">
 
                   <div className="demo-chip-thumbnail">
-                    <img src={demo_images[demo.thumbnail]} width="45px" height="45px"/>
+                    <img src={demo_images[demo.thumbnail]} />
                   </div>
 
                   <div className="demo-chip-top-text">
