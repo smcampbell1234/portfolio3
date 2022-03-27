@@ -92,4 +92,8 @@ export const demo_images = {
   "oncall_proto_shift_detail_wire": "https://drive.google.com/uc?export=view&id=1flpt5RFRx6nzZWYIgMurYcRvSSuA1lbr",
 
   "shift_editor_rates_thumbnail": "https://drive.google.com/uc?export=view&id=1b2ZPisXgdQOGctQT3U_J2wbYJbkAeEqd",
+  "shift_editor_rates_media_link": "https://youtu.be/KYFfpM7xZ08",
+  "shift_editor_rates_media_embed_link": "https://www.youtube.com/embed/KYFfpM7xZ08",
+  "shift_editor_rate_flow_documentation": "https://drive.google.com/uc?export=view&id=1tEFhD6fEI9dITPoZ-nKHLmBL0G_HTB1Y",
+  "shift_editor_rate_utilities": "https://drive.google.com/uc?export=view&id=1irwnyhSGx1WQuiOuwyMwzqdwkpdaL5f-",
 }

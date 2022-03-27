@@ -211,6 +211,44 @@ nav {
 .show-container {
   height: 10rem;
 }
+
+/* ---------------
+details nav
+--------------- */
+.details-nav {
+  background: var(--clr-white);
+  border-bottom: 2px solid lightgray;
+}
+.details-nav-center {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.details-nav-header {
+  padding: 0;
+}
+.details-nav-header:hover {
+  cursor: pointer;
+}
+/**** details back button ****/
+.details-back-btn-wrapper{
+  display: flex;
+  font-size: 1.7rem;
+  color: var(--clr-primary-4);
+  transition: var(--transition);
+}
+.details-back-btn-wrapper:hover {
+  cursor: pointer;
+  color: var(--clr-primary-2);
+}
+.details-back-icon {
+  padding-top: 3px;
+}
+.details-back-text {
+  /*outline: 1px solid blue;*/
+}
 /**** mode toggle ****/
 .switch {
   position: relative;
@@ -396,6 +434,12 @@ Projects Footer Links
   margin-left: 8px;
   float: left;
   font-style: italic;
+}
+.footer-back-btn-wrapper {
+  margin: 35px 4% 0 4%;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
 }
 
 @media screen and (min-width: 800px) {

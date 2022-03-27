@@ -1,13 +1,14 @@
 import React from "react";
 import { demos } from '../data/demoData'
-import Navbar from './Navbar'
+import NavbarDetails from './NavbarDetails'
 import Footer from './Footer'
 import {getDemo} from '../selectors/selectors'
+import BackButton from "./subcomponents/BackButton";
 
 const DemoDetail = (props) => {
-  const {demoId, setDemoId} = props;
+  const {demoId, setDemoId, clearDetails} = props;
 
-  const demo = getDemo(201)
+  const demo = getDemo(demoId)
 
   const clearDemo = () => {
     setDemoId(null)
@@ -51,7 +52,7 @@ const DemoDetail = (props) => {
 
   return (
     <React.Fragment>
-      <Navbar isDetail={isDetail} />
+      <NavbarDetails clearDetails={clearDetails} />
       <div className="demo-detail-outer-wrapper">
         <div className="demo-detail-wrapper">
           <h1 className="demo-detail-header">{demo.title}</h1>
@@ -128,8 +129,10 @@ const DemoDetail = (props) => {
               }
             })
           }
-          <button type="button" onClick={clearDemo}>Back</button>
         </div>
+      </div>
+      <div className="footer-back-btn-wrapper">
+        <BackButton clearDetails={clearDetails} />
       </div>
       <Footer/>
     </React.Fragment>

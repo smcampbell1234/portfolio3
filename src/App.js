@@ -16,9 +16,13 @@ function App() {
 
   let isDetail = demoId;
 
-  // return <DemoDetail demoId={201} setDemoId={setDemoId} />
-  if (demoId) return <DemoDetail demoId={demoId} setDemoId={setDemoId} />
+  // clear details pages - for back button
+  const clearDetails = () => {
+    setDemoId(null)
+  }
 
+  // return <DemoDetail demoId={201} setDemoId={setDemoId} />
+  if (demoId) return <DemoDetail demoId={demoId} setDemoId={setDemoId} clearDetails={clearDetails} />
 
   return (
     <>
@@ -26,7 +30,7 @@ function App() {
       {/*<div style={{height:"100px"}} />*/}
       <Intro isTradMode={isTradMode} />
       <Projects />
-      <Demo setDemoId={setDemoId} />
+      <Demo setDemoId={setDemoId} clearDetails={clearDetails} />
       <Badges />
       <Skills />
       {/*<Dummy />*/}
