@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 // import emailjs from 'emailjs-com"'
 import emailjs from '@emailjs/browser';
 
@@ -6,6 +6,7 @@ const Contact = () => {
   const [name,setName] = useState("")
   const [email,setEmail] = useState("")
   const [message,setMessage] = useState("")
+  const form = useRef();
 
   function encode(data) {
     return Object.keys(data)
@@ -18,7 +19,7 @@ const Contact = () => {
   function  sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('gmail', 'template_9rm3tcv', e.target, 'xgVsjCcLllpwdV2-c')
+    emailjs.sendForm('gmail', 'template_9rm3tcv', form.current, 'xgVsjCcLllpwdV2-c')
       .then((result) => {
         console.log(result.text);
       }, (error) => {
@@ -65,6 +66,7 @@ const Contact = () => {
         <div className="contact-form">
           <form
             // netlify
+            ref={form}
             name="contact"
             // onSubmit={handleSubmit}
             // action="POST"
