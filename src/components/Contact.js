@@ -55,9 +55,13 @@ const Contact = () => {
             name="contact"
             // onSubmit={handleSubmit}
             action="POST"
-            netlify
+            data-netlify="true"
             netlify-honeypot="true"
+            onSubmit="submit"
           >
+            <div type="hidden">
+              <input name="bot-field" />
+            </div>
             <input type="hidden" name="form-name" value="contact" />
             <div className="contact-form-title">
               Hire Me
