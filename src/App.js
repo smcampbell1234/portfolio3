@@ -1,14 +1,9 @@
 import React, {useState} from 'react'
 import Navbar from './components/Navbar'
-import Projects from './components/Projects'
-import Dummy from './components/Dummy'
 import Footer from './components/Footer'
-import Intro from './components/Intro'
-import Skills from './components/Skills'
-import Demo from './components/Demo'
-import Badges from './components/Badges'
-import Contact from './components/Contact'
 import DemoDetail from './components/DemoDetail'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './components/Home'
 
 function App() {
   const [isTradMode,setIsTradMode] = useState(false)
@@ -22,21 +17,19 @@ function App() {
   }
 
   // return <DemoDetail demoId={201} setDemoId={setDemoId} />
-  if (demoId) return <DemoDetail demoId={demoId} setDemoId={setDemoId} clearDetails={clearDetails} />
+  // if (demoId) return <DemoDetail demoId={demoId} setDemoId={setDemoId} clearDetails={clearDetails} />
 
   return (
-    <>
+    <React.Fragment>
       <Navbar isTradMode={isTradMode} setIsTradMode={setIsTradMode} isDetail={isDetail}/>
-      {/*<div style={{height:"100px"}} />*/}
-      <Intro isTradMode={isTradMode} />
-      <Projects />
-      <Demo setDemoId={setDemoId} clearDetails={clearDetails} />
-      <Badges />
-      <Skills />
-      {/*<Dummy />*/}
-      <Contact />
+        <Router>
+          <Routes>
+            <Route path='/' element={<Home setDemoId={setDemoId} clearDetails={clearDetails} isTradMode={isTradMode}/>} />
+            <Route path='demo/:demoId' element={<DemoDetail setDemoId={setDemoId} clearDetails={clearDetails} />} />
+          </Routes>
+        </Router>
       <Footer />
-    </>
+    </React.Fragment>
   )
 }
 

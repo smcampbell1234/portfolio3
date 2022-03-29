@@ -3,13 +3,13 @@ import { demos } from '../data/demoData'
 import NavbarDetails from './NavbarDetails'
 import Footer from './Footer'
 import {getDemo} from '../selectors/selectors'
-import BackButton from "./subcomponents/BackButton";
+import BackButton from "./subcomponents/BackButton"
+import { Link, useParams } from 'react-router-dom'
 
 const DemoDetail = (props) => {
-  const {demoId, setDemoId, clearDetails} = props;
-
+  const { demoId } = useParams();
+  const { clearDetails,setDemoId} = props;
   const demo = getDemo(demoId)
-
   const clearDemo = () => {
     setDemoId(null)
   }
@@ -49,6 +49,8 @@ const DemoDetail = (props) => {
   }
 
   let isDetail = demoId;
+
+
 
   return (
     <React.Fragment>
@@ -134,7 +136,7 @@ const DemoDetail = (props) => {
       <div className="footer-back-btn-wrapper">
         <BackButton clearDetails={clearDetails} />
       </div>
-      <Footer/>
+      {/*<Footer/>*/}
     </React.Fragment>
   )
 }

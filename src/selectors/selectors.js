@@ -9,8 +9,11 @@ import {demos} from "../data/demoData.js"
 const getDemo = (id = null, title = null) => {
   // sentinel, no id or title, return nothing
   if (!(id || title)) return null
-  if (id) // get with id
-    return demos.find(demo => demo.id === id)
+  if (id) {  // get with id
+    // id must be a number
+    let idNumb = parseInt(id)
+    return demos.find(demo => demo.id === idNumb)
+  }
   else if (title) // get with title
     return demos.find(demo => demo.title === title)
   // fail safe, return nothing

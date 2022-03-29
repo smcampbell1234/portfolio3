@@ -13,17 +13,17 @@ const Contact = () => {
       .join("&");
   }
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    alert("send email is currently not hooked up. Please send me direct by email: seanmc2009@gmail.com, Thank You.")
-    // fetch("/", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //   body: encode({ "form-name": "contact", name, email, message }),
-    // })
-    //   .then(() => alert("Message sent!"))
-    //   .catch((error) => alert(error));
-  }
+  // function handleSubmit(e) {
+  //   // e.preventDefault();
+  //   alert("send email is currently not hooked up. Please send me direct by email: seanmc2009@gmail.com, Thank You.")
+  //   // fetch("/", {
+  //   //   method: "POST",
+  //   //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //   //   body: encode({ "form-name": "contact", name, email, message }),
+  //   // })
+  //   //   .then(() => alert("Message sent!"))
+  //   //   .catch((error) => alert(error));
+  // }
 
   return (
     <React.Fragment>
@@ -53,7 +53,9 @@ const Contact = () => {
           <form
             // netlify
             name="contact"
-            onSubmit={handleSubmit}
+            // onSubmit={handleSubmit}
+            action="POST"
+            data-netlify="true"
           >
             <div className="contact-form-title">
               Hire Me
@@ -74,6 +76,7 @@ const Contact = () => {
                 id="name"
                 className="contact-form-input"
                 onChange={(e) => setName(e.target.value)}
+                name="name"
               />
             </div>
 
@@ -86,6 +89,7 @@ const Contact = () => {
                 id="email"
                 className="contact-form-input"
                 onChange={(e) => setEmail(e.target.value)}
+                name="email"
               />
             </div>
 
@@ -98,6 +102,7 @@ const Contact = () => {
                 id="email"
                 className="contact-form-input contact-message"
                 onChange={(e) => setEmail(e.target.value)}
+                name="message"
               />
             </div>
             <button

@@ -217,7 +217,7 @@ details nav
 --------------- */
 .details-nav {
   background: var(--clr-white);
-  border-bottom: 2px solid lightgray;
+  /*border-bottom: 2px solid lightgray;*/
 }
 .details-nav-center {
   margin: 0 auto;
