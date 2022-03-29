@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+// import emailjs from 'emailjs-com"'
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [name,setName] = useState("")
@@ -13,6 +15,17 @@ const Contact = () => {
       .join("&");
   }
 
+  function  sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('gmail', 'template_9rm3tcv', e.target, 'xgVsjCcLllpwdV2-c')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+    // e.target.reset()
+  }
   // function handleSubmit(e) {
   //   // e.preventDefault();
   //   alert("send email is currently not hooked up. Please send me direct by email: seanmc2009@gmail.com, Thank You.")
@@ -54,15 +67,15 @@ const Contact = () => {
             // netlify
             name="contact"
             // onSubmit={handleSubmit}
-            action="POST"
-            data-netlify="true"
-            netlify-honeypot="true"
-            onSubmit="submit"
+            // action="POST"
+            // data-netlify="true"
+            // netlify-honeypot="true"
+            onSubmit={sendEmail}
           >
-            <div type="hidden">
-              <input name="bot-field" />
-            </div>
-            <input type="hidden" name="form-name" value="contact" />
+            {/*<div type="hidden">*/}
+            {/*  <input name="bot-field" />*/}
+            {/*</div>*/}
+            {/*<input type="hidden" name="form-name" value="contact" />*/}
             <div className="contact-form-title">
               Hire Me
             </div>
