@@ -51,7 +51,7 @@ const Contact = () => {
         </div>
         <div className="contact-form">
           <form
-            netlify
+            // netlify
             name="contact"
             // onSubmit={handleSubmit}
             action="POST"
