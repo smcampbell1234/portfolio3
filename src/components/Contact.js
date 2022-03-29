@@ -57,8 +57,8 @@ const Contact = () => {
             action="POST"
             netlify
             netlify-honeypot="true"
-            hidden
           >
+            <input type="hidden" name"form-name" value="contact" />
             <div className="contact-form-title">
               Hire Me
             </div>
