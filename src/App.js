@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './components/Home'
 
 function App() {
-  const [isTradMode,setIsTradMode] = useState(false)
+  const [isTradMode,setIsTradMode] = useState(true)
   const [demoId,setDemoId] = useState(null)
 
   let isDetail = demoId;
