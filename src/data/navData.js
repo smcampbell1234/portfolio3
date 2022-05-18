@@ -3,33 +3,33 @@ import { FaBehance, FaFacebook, FaLinkedin, FaTwitter, FaGithub } from 'react-ic
 export const links = [
   {
     id: 3,
-    url: '/projects',
+    url: null,
     text: 'projects',
-    ref: '#projects'
+    ref: null,
   },
   {
     id: 2,
-    url: '/demos',
+    url: null,
     text: 'demos',
-    ref: '#demo'
+    ref: null,
   },
   {
     id: 3,
-    url: '/skills',
+    url: null,
     text: 'skills',
-    ref: '#skills'
+    ref: null,
   },
   {
     id: 4,
-    url: '/resume',
+    url: 'https://docs.google.com/document/d/1v1F1wgbgCP2ShWD4lCIlTJZckXvePvISw5w3olBTlH4/edit?usp=sharing',
     text: 'resume',
-    ref: '#resume'
+    ref: null,
   },
   {
     id: 5,
-    url: '/contact',
+    url: null,
     text: 'contact',
-    ref: '#contact'
+    ref: null
   },
 
 

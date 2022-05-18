@@ -183,6 +183,10 @@ nav {
   color: var(--clr-primary-2);
   transform: rotate(90deg);
 }
+.nav-do-not-press {
+  color: var(--clr-primary-2);
+  font-size: .7rem;
+}
 .logo {
   height: 40px;
 }
@@ -739,7 +743,7 @@ Skill Pager Bar
 Resume Section
 --------------- */
 .resume-section-wrapper {
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 

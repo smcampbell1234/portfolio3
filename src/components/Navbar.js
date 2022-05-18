@@ -47,12 +47,16 @@ const Navbar = (props) => {
             <ul className="links" ref={linksRef}>
               {
                 links.map((link) => {
-                  const {id, text} = link;
+                  const {id, text, url} = link;
                   return <li key={id} onClick={() => {
                     document.getElementById(text).scrollIntoView({behavior: "smooth", block: "start"})
                   }}
                   >
-                    <a>{text}</a>
+                    {!!url ?
+                      <a href={url} target="_blank">{text}</a>
+                      :
+                      <a>{text}</a>
+                    }
                   </li>
                 })
               }
@@ -75,7 +79,7 @@ const Navbar = (props) => {
               <span className="slider round"></span>
             </label>
             &nbsp;
-            <span style={{color: "#8B0000", fontSize: ".7rem"}}>Do press this button</span>
+            <span className="nav-do-not-press">Do press this button</span>
           </div>
         }
 
