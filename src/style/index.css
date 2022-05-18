@@ -161,6 +161,7 @@ Navbar
 nav {
   background: var(--clr-white);
   border-bottom: 2px solid lightgray;
+  margin-bottom: 25px;
 }
 .nav-header {
   display: flex;
@@ -235,7 +236,7 @@ details nav
 /**** details back button ****/
 .details-back-btn-wrapper{
   display: flex;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   color: var(--clr-primary-4);
   transition: var(--transition);
 }
@@ -353,11 +354,18 @@ Project Chip
   flex-direction: column;
   justify-content: space-between;
   max-width: 500px; /*600*/
+  transition: var(--slugslowtransition);
   margin: 5px 5px 20px 5px;
   background-color: white;
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   overflow: hidden;
+  height: 100%;
+  color: var(--clr-primary-2);
+}
+.proj-container:hover {
+  background-color: var(--clr-grey-9);
+  cursor: pointer;
 }
 .proj-header img {
   max-width: 500px;
@@ -530,6 +538,10 @@ Skills Section Table
 .skills-table-outer-wrapper {
   overflow: hidden;
   margin: var(--chip-margin);
+  /*max-width: 1550px;*/
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* ---------------
 Skills Filter Bar
@@ -574,6 +586,7 @@ Skills Filter Bar
   transition: var(--transition);
   margin: 3px 3px 3px 3px;
   word-wrap: break-word;
+  font-size: .8rem;
 }
 .skills-filter-option:hover {
   cursor: pointer;
@@ -582,8 +595,11 @@ Skills Filter Bar
 /* ---------------
 Skills
 --------------- */
+.skills-outer-wrapper {
+  outline: 1px solid red;
+}
 .skills-datatable-container {
-  /*outline: 1px solid var(--clr-grey-7);*/
+  outline: 1px solid var(--clr-grey-7);
   margin: 10px 10px 10px 10px;
   padding: 0 7px 0 7px;
 }
@@ -610,7 +626,8 @@ Skills
   transition: var(--slowtransition);
 }
 .skill-row-gray {
-  background-color: var(--clr-grey-10)
+  background-color: var(--clr-grey-10);
+  border: 1px solid #e20202;
 }
 .skill-row-wrapper:hover {
   cursor: pointer;
@@ -626,11 +643,22 @@ Skills
 .skills-row-item {
   flex: 1;
 }
+.skills-see-detail {
+  flex: 1;
+}
+.see-detail{
+  font-size: .8rem;
+  color: var(--clr-primary-5);
+  padding-top: 3px;
+}
+.skills-show-details-btn-txt {
+  font-size: .7rem;
+}
 .skills-show-details-btn {
   color: var(--clr-primary-5);
   transition: var(--slowtransition);
   flex-grow: 1;
-  margin: 0 3px 0 3px;
+  margin: 0 0 3px 0;
   text-align: center;
 }
 .skills-show-details-btn:hover {
@@ -660,8 +688,8 @@ Skills
   margin-left: 4px;
 }
 .skills-category {
-  border: 1px solid black;
-  border-radius: 20px;
+  /*border: 1px solid black;*/
+  /*border-radius: 20px;*/
   padding: 1px 5px 1px 5px;
   margin: 0 3px 3px 0;
   display: inline-block;
@@ -706,6 +734,15 @@ Skill Pager Bar
 .option-selected {
   color: var(--clr-grey-8);
 }
+
+/* ---------------
+Resume Section
+--------------- */
+.resume-section-wrapper {
+  outline: 1px solid red;
+}
+
+
 /* ---------------
 Demo Section
 --------------- */
@@ -714,6 +751,8 @@ Demo Section
   flex-wrap: wrap;
   justify-content: center;
   margin: var(--chip-margin);
+  text-decoration: none;
+  color: black;
 }
 .demo-chip-wrapper {
   border: 1px solid var(--border-color);
@@ -722,6 +761,8 @@ Demo Section
   margin: 5px 5px 5px 5px;
   max-width: 500px;
   transition: var(--slugslowtransition);
+  height: 100%;
+  color: var(--clr-primary-2);
 }
 .demo-chip-wrapper:hover {
   background-color: var(--clr-grey-9);
@@ -870,16 +911,18 @@ Badges Section
 .container {
   display: flex;
   overflow-x: auto;
-  /*justify-content: center;*/
+  justify-content: center;
   margin: var(--chip-margin);
 }
 .container::-webkit-scrollbar {    display: none;}
 .badge-wrapper {
-  margin: 5px 60px 4px 60px;
+  margin: 5px 10px 4px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 250px;
+  /*justify-content: space-between;*/
+  /*max-width: 250px;*/
+  width: 137px;
 }
 .badge-progress-bar-outer {
   margin-left: auto;
@@ -889,18 +932,27 @@ Badges Section
   background-color: lightgray;
   border-radius: 7px;
 }
+.badge-faux-space{
+  height: 13px;
+  width: 10px;
+}
 .badge-progress-bar-inner {
   background-color: var(--clr-green-dark);
   height: 13px;
   border-radius: 7px;
 }
 .badge-img-wrapper img {
-  width: 250px;
-  height: 210px;
+  /*width: 250px;*/
+  /*height: 210px;*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 100px;
 }
 .badge-txt {
   text-align: center;
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 /* ---------------
@@ -910,7 +962,11 @@ Contact Section
   display: flex;
   justify-content: center;
   overflow: hidden;
-  margin: var(--chip-margin);
+  /*margin: var(--chip-margin);*/
+  /*max-width: 1550px;*/
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .contact-google-map_wrapper {
   width: 65%;
@@ -1065,18 +1121,25 @@ Placeholder
         font-size: .8rem;
   }
   /* ---------------
+ Skills Section
+ --------------- */
+  .skills-filter-option {
+    font-size: .5rem;
+  }
+
+  /* ---------------
   Contact Section
   --------------- */
-    .contact-google-map_wrapper {
-            display: none;
-    }
+  .contact-google-map_wrapper {
+    display: none;
+  }
 
-    .contact-info-box-right {
-            display: block;
-    }
-    .contact-form {
-            width: 100%;
-    }
+  .contact-info-box-right {
+    display: block;
+  }
+  .contact-form {
+    width: 100%;
+  }
   /* ---------------
   Intro Section
   --------------- */
@@ -1101,4 +1164,19 @@ Placeholder
   .intro-space-holder {
     width: 8%; /* 6% */
   }
+
+  /* ---------------
+ Footer Section
+ --------------- */
+  .main-footer-container {
+    flex-direction: column;
+  }
+
+
+
+
+
+
+
+
 }

@@ -1,18 +1,15 @@
-import React from "react";
-import { demos } from '../data/demoData'
-import NavbarDetails from './NavbarDetails'
-import Footer from './Footer'
+import React, {useEffect} from "react";
 import {getDemo} from '../selectors/selectors'
 import BackButton from "./subcomponents/BackButton"
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
-const DemoDetail = (props) => {
+const DemoDetail = () => {
   const { demoId } = useParams();
-  const { clearDetails,setDemoId} = props;
   const demo = getDemo(demoId)
-  const clearDemo = () => {
-    setDemoId(null)
-  }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   /********* Render Helpers **************/
   const renderMedia = (idx) => {
@@ -48,13 +45,8 @@ const DemoDetail = (props) => {
     )
   }
 
-  let isDetail = demoId;
-
-
-
   return (
     <React.Fragment>
-      <NavbarDetails clearDetails={clearDetails} />
       <div className="demo-detail-outer-wrapper">
         <div className="demo-detail-wrapper">
           <h1 className="demo-detail-header">{demo.title}</h1>
@@ -95,7 +87,6 @@ const DemoDetail = (props) => {
                         { renderMedia(idx) }
                       </div>
                     </div>
-
                   </div>
                 )
               }
@@ -134,9 +125,8 @@ const DemoDetail = (props) => {
         </div>
       </div>
       <div className="footer-back-btn-wrapper">
-        <BackButton clearDetails={clearDetails} />
+        <BackButton/>
       </div>
-      {/*<Footer/>*/}
     </React.Fragment>
   )
 }

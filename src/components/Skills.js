@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react';
+import React, {useState} from 'react';
 import { skills } from '../data/skillsData'
 import { frequency_imgs, filter_arrow, categories } from '../images/skills'
 import { FiRefreshCcw } from 'react-icons/fi';
@@ -11,7 +11,8 @@ const getProficiencyColor = (score) => {
   else if (score <= 100) return "#00c500"
 }
 
-const Skills = () => {
+const Skills = (props) => {
+  const {windowWidth, mediaQuery1} = props.windowDimensions;
   // **************** state ****************
   const [sort,setSort] = useState({
     skill: 0,
@@ -24,6 +25,8 @@ const Skills = () => {
   const [showDetails,setShowDetails] = useState(false)
   const [rowCount,setRowCount] = useState(10)
 
+  const showDetailTxt = windowWidth > mediaQuery1 ? "show details" : "details";
+  const hideDetailTxt = windowWidth > mediaQuery1 ? "hide details" : "hide";
 
   // **************** handlers ****************
   // toggle sort arrows for correct column: @arg string name of column
@@ -140,22 +143,24 @@ const Skills = () => {
             </div>
           </div>
           <div className="skills-show-details-btn">
-            <span className="skills-show-details-btn-txt" onClick={() => {setShowDetails(!showDetails); setSelectedSkills([]);}}>
-            {showDetails ?  "hide details" : "show details"}
-            </span>
+            <div className="skills-show-details-btn-txt" onClick={() => {setShowDetails(!showDetails); setSelectedSkills([]);}}>
+              {
+                showDetails ? hideDetailTxt : showDetailTxt
+              }
+            </div>
           </div>
           <div className="skills-filter-options-wrapper">
-            {filterOptions.map(filter => {
+            {filterOptions.map((filter) => {
               let isSelected = filterList.includes(filter) ? "skill-row-gray" : null;
               return (
-                  <div
-                    key={filter}
-                    className={`skills-filter-option ${isSelected}`}
-                    onClick={() => handleFilter(filter)}
-                  >
-                    {filter}
-                  </div>
-                )
+                <div
+                  key={filter}
+                  className={`skills-filter-option ${isSelected}`}
+                  onClick={() => handleFilter(filter)}
+                >
+                  {filter}
+                </div>
+              )
             })}
           </div>
         </div>
@@ -167,12 +172,21 @@ const Skills = () => {
                 <img src={filter_arrow[sort.skill]} height="18px" width="15px" alt="header logo"/>
               </div>
             </div>
-            <div className="skills-row-item">
-              Category
-              <div className="skills-sort-arrows" onClick={()=>handleSortArrow("category")}>
-                <img src={filter_arrow[sort.category]} height="18px" width="15px" alt="header logo"/>
+
+            {
+              windowWidth > mediaQuery1 &&
+              <div className="skills-see-detail"/>
+            }
+            {
+              windowWidth > mediaQuery1 &&
+              <div className="skills-row-item">
+                Category
+                <div className="skills-sort-arrows skill-header-category-arrows"
+                     onClick={() => handleSortArrow("category")}>
+                  <img src={filter_arrow[sort.category]} height="18px" width="15px" alt="header logo"/>
+                </div>
               </div>
-            </div>
+            }
             <div className="skills-row-item">
               Proficiency*
               <div className="skills-sort-arrows" onClick={()=>handleSortArrow("proficiency")}>
@@ -199,6 +213,7 @@ const Skills = () => {
                 <div
                   className={`skill-row-wrapper ${selectedSkills.includes(id) ? "skill-row-gray" : null}`}
                   onClick={() => toggleSkillItem(id)}
+                  key={idx}
                 >
                   <li key={id} className="skills-row">
                     <div className="skills-row-item skills-skill-col">
@@ -209,11 +224,23 @@ const Skills = () => {
                         {skill}
                       </div>
                     </div>
-                    <div className="skills-row-item">
-                      <div className="skills-category">
-                        {item.category}
+
+                    {
+                      windowWidth > mediaQuery1 &&
+                      <div className="skills-row-item see-detail">
+                        details
                       </div>
-                    </div>
+                    }
+
+                    {
+                      windowWidth > mediaQuery1 &&
+                      <div className="skills-row-item">
+                        <div className="skills-category skill-category-col">
+                          {item.category}
+                        </div>
+                      </div>
+                    }
+
                     <div className="skills-row-item">
                       <div className="skills-proficiency-score">{proficiency}%</div>
                       <div style={colorBarStyle}>&nbsp;</div>

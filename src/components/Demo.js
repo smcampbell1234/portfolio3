@@ -4,26 +4,25 @@ import { demo_images } from '../images/skills'
 import { Link, useParams } from 'react-router-dom'
 
 const Demo = (props) => {
-  const {setDemoId} = props
-
-  // const handleDemo = (id) => {
-  //   setDemoId(id)
-  // }
+  const { scrollY,handlePosition} = props;
   return (
     <React.Fragment>
-      <div id="demo" className="section-header-wrapper">
+      <div id="demos" className="section-header-wrapper">
         <div className="section-header">Demos</div>
         <div className="section-subheader">Images and videos demonstrating professional work.</div>
       </div>
       <div className="demo-section-wrapper">
         {
           demos.map((demo,idx) => {
+            if (!demo.show) {
+              return null;
+            }
             return (
-              <Link to={`/demo/${demo.id}`} >
+              <Link to={`/demo/${demo.id}`} key={idx} >
                 <div key={demo.id} className="demo-chip-wrapper"
-                     // onClick={() => setDemoId(demo.id)}
+                     onClick={() => {handlePosition(scrollY)
+                     }}
                 >
-
                   <div className="demo-chip-top">
 
                     <div className="demo-chip-thumbnail">
@@ -40,9 +39,7 @@ const Demo = (props) => {
                       <div/>
                       <div/>
                     </div>
-
                   </div>
-
                   <div className="demo-chip-detail">
                     {demo.summary}
                   </div>

@@ -18,22 +18,24 @@ export const projects = [
       {text: "snippet", url: 'https://www.twitter.com', icon: <FiCodesandbox />,},
       {text: "docs", url: 'https://www.twitter.com', icon: <SiNotion />,},
       {text: "source", url: 'https://www.twitter.com', icon: <AiFillGithub />,},
-    ]
+    ],
+    show: false,
   },
   {
     id: 102,
-    banner: "https://drive.google.com/uc?export=view&id=14fEM3sUincxL0SqEEKbt-cOvc7Lw7i3M",
-    title: 'The Jewelery Store - E-Commerce App',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit tortor sit amet urna dignissim consequat at a libero. Vestibulum ante ipsum primis in faucibus orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit tortor sit amet urna dignissim consequat at a libero. Vestibulum ante ipsum primis in faucibus orci ",
+    banner: "https://drive.google.com/uc?export=view&id=1J1XW6Ix_2v9iTLI9GyClbljHLS4lWXU-",
+    title: 'Paint The Girl - E-Commerce App',
+    text: "This online jewelry store was built specifically for an instagram influencer in-need of a quick homebase for branding and online sales. It's next addition will include a role-based login to access an Admin Screen.",
     callouttitle: "TECHNOLOGY",
-    callouttext: "Full Stack, React JS, Hooks, Python, Mongo NoSQL DB, notifications, Sass, HTML5, CSS3",
+    callouttext: "ReactJS, Hooks, Styled Components, Serverless Functions, Responsive Design, HTML5, CSS3",
     button1text: "App Details",
     button2text: "Open App",
-    footerlinks: [
-      {text: "snippet", url: 'https://www.twitter.com', icon: <FiCodesandbox />,},
-      {text: "docs", url: 'https://www.twitter.com', icon: <SiNotion />,},
-      {text: "source", url: 'https://www.twitter.com', icon: <AiFillGithub />,},
-    ]
+    // footerlinks: [
+    //   {text: "snippet", url: 'https://www.twitter.com', icon: <FiCodesandbox />,},
+    //   {text: "docs", url: 'https://www.twitter.com', icon: <SiNotion />,},
+    //   {text: "source", url: 'https://www.twitter.com', icon: <AiFillGithub />,},
+    // ],
+    show: true,
   },
   {
     id: 103,
@@ -48,7 +50,8 @@ export const projects = [
       {text: "snippet", url: 'https://www.twitter.com', icon: <FiCodesandbox />,},
       {text: "docs", url: 'https://www.twitter.com', icon: <SiNotion />,},
       {text: "source", url: 'https://www.twitter.com', icon: <AiFillGithub />,},
-    ]
+    ],
+    show: false,
   },
   {
     id: 104,
@@ -63,7 +66,8 @@ export const projects = [
       {text: "snippet", url: 'https://www.twitter.com', icon: <FiCodesandbox />,},
       {text: "docs", url: 'https://www.twitter.com', icon: <SiNotion />,},
       {text: "source", url: 'https://www.twitter.com', icon: <AiFillGithub />,},
-    ]
+    ],
+    show: false,
   },
   {
     id: 105,
@@ -78,7 +82,8 @@ export const projects = [
       {text: "snippet", url: 'https://www.twitter.com', icon: <FiCodesandbox />,},
       {text: "docs", url: 'https://www.twitter.com', icon: <SiNotion />,},
       {text: "source", url: 'https://www.twitter.com', icon: <AiFillGithub />,},
-    ]
+    ],
+    show: false,
   },
   {
     id: 106,
@@ -93,6 +98,7 @@ export const projects = [
       {text: "snippet", url: 'https://www.twitter.com', icon: <FiCodesandbox />,},
       {text: "docs", url: 'https://www.twitter.com', icon: <SiNotion />,},
       {text: "source", url: 'https://www.twitter.com', icon: <AiFillGithub />,},
-    ]
+    ],
+    show: false,
   },
 ]

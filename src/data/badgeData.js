@@ -68,12 +68,12 @@ export const badges = [
     title: "10000 Hours",
     type: "Time Based",
     image: "10000devhrs_off",
-    percent: 85,
+    percent: 90,
     percent_show: true,
     stars: 0,
     data: [
-      "Hours Coding",
-      "Based on Malcolm Gladwell's 10,000 hrs to mastery",
+      "10K Hours Coding",
+      // "Based on Malcolm Gladwell's 10,000 hrs to mastery",
     ],
     feature: true,
     archive: false,
@@ -87,8 +87,8 @@ export const badges = [
     percent_show: false,
     stars: 0,
     data: [
-      "Professional Stories",
-      "More than 200 stores completed in front- and back-end programming",
+      "200 Professional Stories Completed",
+      // "More than 200 stores completed in front- and back-end programming",
     ],
     feature: true,
     archive: false,
@@ -102,7 +102,7 @@ export const badges = [
     percent_show: false,
     stars: 0,
     data: [
-      "Fished task and pushed to GitHub 30 days in a row, three times.",
+      "Pushed 30 days in a row, three times.",
       "",
       "",
     ],
@@ -118,7 +118,7 @@ export const badges = [
     percent_show: true,
     stars: 0,
     data: [
-      "Fished tasked and pushed to GitHub 60 days in a row.",
+      "Pushed 48 days in a row, record high",
       "",
       "",
     ],
@@ -134,8 +134,8 @@ export const badges = [
     percent_show: false,
     stars: 0,
     data: [
-      "Complete 5 FReMP Paths",
-      "Wire a front-end action through middle-wear to swagger API to a server-side python endpoint where a query is made to a MongoDB and its response returned to the reducer and front end.",
+      "Completed 12 FReMP Paths",
+      // "Wire a front-end action through middle-wear to swagger API to a server-side python endpoint where a query is made to a MongoDB and its response returned to the reducer and front end.",
     ],
     feature: true,
     archive: false,
@@ -149,8 +149,7 @@ export const badges = [
     percent_show: false,
     stars: 0,
     data: [
-      "Did not miss stand up meeting for 365 days in a row",
-
+      "100% attendance, 1 Year",
     ],
     feature: true,
     archive: false,

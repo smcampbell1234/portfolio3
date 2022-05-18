@@ -7,11 +7,9 @@ const Footer = () => {
         <div className="main-footer-info">
           seanmc2009@gmail.com<br/>
         </div>
-
         <div className="main-footer-copyright">
-          Copyright © 2022, Sean Campbell all rights reserved<br/>
+          Copyright 2022 Sean Campbell. All rights reserved.<br/>
         </div>
-
         <div className="main-footer-details">
           {
             <ul className="footer-social-icons">

@@ -15,6 +15,11 @@ const Intro = (props) => {
         <img src={intro_photo} alt="intro image"  />
       </div>
 
+      <div style={{display:"none"}}>
+         <img src="https://drive.google.com/uc?export=view&id=1fgsIFRbUxrR6j0puc1gZDo-T7ertuPPy" alt="1"/>
+          <img src="https://drive.google.com/uc?export=view&id=17HtbxYb78V1E3XS7NacPLDf904vVefA5" alt="2"/>
+        </div>
+
       <div className="intro-space-holder">
 
       </div>

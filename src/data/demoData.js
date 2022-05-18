@@ -10,6 +10,7 @@ export const demos = [
     callouttitle: "Technology",
     callouttext: "Flask, React JS, MongDB, Python",
     feature: true,
+    show: true,
     date: "2022-01-16",
     details: [
       {
@@ -94,6 +95,7 @@ export const demos = [
     callouttitle: "Technology",
     callouttext: "Full Stack, React JS, Hooks, Python, Mongo NoSQL DB, notifications, Sass, HTML5, CSS3",
     feature: false,
+    show: true,
     date: "2022-01-13",
     details: [
       {
@@ -142,6 +144,7 @@ export const demos = [
     callouttitle: "Technology",
     callouttext: "Full Stack, React JS, Hooks, Python, Mongo NoSQL DB, notifications, Sass, HTML5, CSS3",
     feature: true,
+    show: false,
     date: "2022-01-09",
     details: [],
   },
@@ -153,6 +156,7 @@ export const demos = [
     callouttitle: "Technology",
     callouttext: "Full Stack, React JS, Hooks, Python, Mongo NoSQL DB, notifications, Sass, HTML5, CSS3",
     feature: false,
+    show: false,
     date: "2022-01-08",
     details: [],
   },
@@ -164,6 +168,7 @@ export const demos = [
     callouttitle: "Technology",
     callouttext: "Full Stack, React JS, Hooks, Python, Mongo NoSQL DB, notifications, Sass, HTML5, CSS3",
     feature: false,
+    show: false,
     date: "2022-01-05",
     details: [],
   },
@@ -175,6 +180,7 @@ export const demos = [
     callouttitle: "Technology",
     callouttext: "Full Stack, React JS, Hooks, Python, Mongo NoSQL DB, notifications, Sass, HTML5, CSS3",
     feature: true,
+    show: false,
     date: "2022-01-02",
     details: [],
   },

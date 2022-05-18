@@ -5,20 +5,22 @@ import Demo from './Demo'
 import Badges from './Badges'
 import Skills from './Skills'
 import Contact from './Contact'
+import Resume from './Resume'
 import Fade from 'react-reveal/Fade'
 
 const Home = (props) => {
-  let {setDemoId, clearDetails,isTradMode} = props
+  const {isTradMode,windowDimensions} = props
   return (
     <React.Fragment>
       <Intro isTradMode={isTradMode} />
       <Projects />
-      <Fade bottom>
-        <Demo setDemoId={setDemoId} clearDetails={clearDetails} />
+      {/*<Fade bottom>*/}
+        <Demo />
         <Badges />
-        <Skills />
+        <Skills windowDimensions={windowDimensions} />
+        <Resume />
         <Contact />
-      </Fade>
+      {/*</Fade>*/}
     </React.Fragment>
   )
 }

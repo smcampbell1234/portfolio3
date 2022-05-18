@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import DemoDetail from './components/DemoDetail'
@@ -6,29 +6,38 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './components/Home'
 
 function App() {
-  const [isTradMode,setIsTradMode] = useState(true)
-  const [demoId,setDemoId] = useState(null)
+  const [isTradMode,setIsTradMode] = useState(true) // is traditional mode, changed by mode toggle
+  const [windowDimensions,setWindowDimensions] = useState({
+    windowWidth: window.innerWidth,
+    windowHeight: window.innerHeight,
+    mediaQuery1: 810, // impacts mode toggle and skill table responsive design
+  })
 
-  let isDetail = demoId;
-
-  // clear details pages - for back button
-  const clearDetails = () => {
-    setDemoId(null)
+  const detectSize = () => {
+    setWindowDimensions({
+      ...windowDimensions,
+      windowWidth: window.innerWidth,
+      windowHeight: window.innerHeight,
+    });
   }
 
-  // return <DemoDetail demoId={201} setDemoId={setDemoId} />
-  // if (demoId) return <DemoDetail demoId={demoId} setDemoId={setDemoId} clearDetails={clearDetails} />
+  useEffect(()=>{
+    window.addEventListener('resize',detectSize)
+    return () => {
+      window.removeEventListener('resize',detectSize)
+    }
+  }, [windowDimensions])
 
   return (
     <React.Fragment>
-      <Navbar isTradMode={isTradMode} setIsTradMode={setIsTradMode} isDetail={isDetail}/>
         <Router>
+          <Navbar isTradMode={isTradMode} setIsTradMode={setIsTradMode} windowDimensions={windowDimensions} />
           <Routes>
-            <Route path='/' element={<Home setDemoId={setDemoId} clearDetails={clearDetails} isTradMode={isTradMode}/>} />
-            <Route path='demo/:demoId' element={<DemoDetail setDemoId={setDemoId} clearDetails={clearDetails} />} />
+            <Route path='/' element={<Home isTradMode={isTradMode} windowDimensions={windowDimensions} />} />
+            <Route path='demo/:demoId' element={<DemoDetail />} />
           </Routes>
+          <Footer />
         </Router>
-      <Footer />
     </React.Fragment>
   )
 }

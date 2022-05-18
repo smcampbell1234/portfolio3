@@ -8,32 +8,34 @@ const Badges = () => {
     <React.Fragment>
       <div id="badges" className="section-header-wrapper">
         <div className="section-header">Badges</div>
-        <div className="section-subheader">Badges based on time, taskS, achievementS, and competencies. </div>
+        <div className="section-subheader">Badges based on time, tasks, achievements, and competencies. </div>
       </div>
       <div className="badge-section-wrapper">
         <div className="container">
         {
-          badges.map(badge => {
+          badges.map((badge,idx) => {
             const {image,percent,percent_show,archive} = badge
 
             if (!archive) {
               return (
-                <div className="badge-wrapper">
-                  <div className="badge-img-wrapper">
-                    <img src={badge_images[image]}/>
-                  </div>
+                <div className="badge-wrapper" key={idx}>
                   <div>
-                    {
-                      percent_show &&
-                      <div className="badge-progress-bar-outer">
-                        <div style={{width: percent}} className="badge-progress-bar-inner"/>
-                      </div>
-                    }
-                  </div>
+                    <div className="badge-img-wrapper">
+                      <img src={badge_images[image]}/>
+                    </div>
+                      {
+                        percent_show ?
+                        <div className="badge-progress-bar-outer">
+                          <div style={{width: percent}} className="badge-progress-bar-inner"/>
+                        </div>
+                         :
+                        <div className="badge-faux-space">&nbsp;</div>
+                      }
 
-                  {badge.data.map(item => {
+                  </div>
+                  {badge.data.map((item,idx) => {
                       return (
-                        <div className="badge-txt">{item}</div>
+                        <div className="badge-txt" key={idx}>{item}</div>
                       )
                     }
                   )}
