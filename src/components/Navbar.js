@@ -79,7 +79,7 @@ const Navbar = (props) => {
               <span className="slider round"></span>
             </label>
             &nbsp;
-            <span className="nav-do-not-press">Do press this button</span>
+            <span className="nav-do-not-press">Don't press this button</span>
           </div>
         }
 
