@@ -5,10 +5,10 @@ import { FiRefreshCcw } from 'react-icons/fi';
 
 /***** proficiency color map *****/
 const getProficiencyColor = (score) => {
-  if (score < 25) return "Red"
-  else if (score < 50) return "#ff7900"
-  else if (score < 75) return "#F5E950"
-  else if (score <= 100) return "#00c500"
+  if (score < 25) return "#6EBEF7" // alt - red
+  else if (score < 50) return "#49A6E9" // alt - #ff7900
+  else if (score < 75) return "#2D87C8" // alt - #F5E950
+  else if (score <= 100) return "#104E7A" // alt - #00c500
 }
 
 const Skills = (props) => {
