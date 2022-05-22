@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import DemoDetail from './components/DemoDetail'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './components/Home'
+import ProjectDetails from './components/ProjectDetails'
 
 function App() {
   const [isTradMode,setIsTradMode] = useState(true) // is traditional mode, changed by mode toggle
@@ -35,6 +36,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home isTradMode={isTradMode} windowDimensions={windowDimensions} />} />
             <Route path='demo/:demoId' element={<DemoDetail />} />
+            <Route path='project/:projectId' element={<ProjectDetails />} />
           </Routes>
           <Footer />
         </Router>

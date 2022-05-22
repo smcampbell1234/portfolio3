@@ -8,12 +8,6 @@ export const links = [
     ref: null,
   },
   {
-    id: 2,
-    url: null,
-    text: 'demos',
-    ref: null,
-  },
-  {
     id: 3,
     url: null,
     text: 'skills',
@@ -21,8 +15,8 @@ export const links = [
   },
   {
     id: 4,
-    url: 'https://docs.google.com/document/d/1v1F1wgbgCP2ShWD4lCIlTJZckXvePvISw5w3olBTlH4/edit?usp=sharing',
-    text: 'resume',
+    url: null,
+    text: 'about',
     ref: null,
   },
   {
@@ -30,6 +24,12 @@ export const links = [
     url: null,
     text: 'contact',
     ref: null
+  },
+  {
+    id: 6,
+    url: 'https://docs.google.com/document/d/1v1F1wgbgCP2ShWD4lCIlTJZckXvePvISw5w3olBTlH4/edit?usp=sharing',
+    text: 'resume',
+    ref: null,
   },
 
 

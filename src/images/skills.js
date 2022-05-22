@@ -18,6 +18,7 @@ export const categories = {
   "Agile": "https://drive.google.com/uc?export=view&id=1AGRpTHgTawHzg24TFOVaEZ_I66psAdYe",
   "C": "https://drive.google.com/uc?export=view&id=1Kl_vem7nCG8dMdd3BX5PSS2mrZZd99WP",
   "C++": "https://drive.google.com/uc?export=view&id=1jEOaeRaPoIqz_5l7JsxZXvAR1U0pr2l_",
+  "Data Structures":"https://drive.google.com/uc?export=view&id=1SjAe3UVJRaWnNxCta-H5WzAkopyFYwMv",
   "Codepen.io": "https://drive.google.com/uc?export=view&id=1Is-i4KkxuS0GQd5e4MTOg7BcsvSD5wmv",
   "CSS3": "https://drive.google.com/uc?export=view&id=1IK01s_eGn5mMIBUqpMIXjHl8lc7wLilG",
   "Draw.io": "https://drive.google.com/uc?export=view&id=1XRokY7Lnw9hjDMlvp66UIKwi2mjMU8DA",
@@ -41,7 +42,7 @@ export const categories = {
   "Photoshop": "https://drive.google.com/uc?export=view&id=1aAxqKDRz4x1ZnDISDdgI4MMPHFbLrvu1",
   "PrimeReact": "https://drive.google.com/uc?export=view&id=1AAad7imctWjZLXFeRr24251SllfrseUJ",
   "Python": "https://drive.google.com/uc?export=view&id=1jHhCTerpYdxTo0tAF5e-kJcLvq1n0pP7",
-  "React JS": "https://drive.google.com/uc?export=view&id=1nuJwfONQodZatCJ8av1tc9FjRS-hOwfF",
+  "ReactJS": "https://drive.google.com/uc?export=view&id=1nuJwfONQodZatCJ8av1tc9FjRS-hOwfF",
   "Sass": "https://drive.google.com/uc?export=view&id=1tBLndECEVOO0OJHVAI-ivkBiSIYYP2c4",
   "Selenium Testing": "https://drive.google.com/uc?export=view&id=1Sz6MkKYhMLKkXS084Z_Re3D04UHIJ-6z",
   "Shortcut": "https://drive.google.com/uc?export=view&id=1ACckMfPUZqtxfMsBY9Rr_T0dPizhvNlJ",
@@ -85,15 +86,46 @@ export const demo_images = {
   "oncall_scheduler_media_link": "https://youtu.be/p6go2GSJ4FM",
   "oncall_scheduler_media_embed_link": "https://www.youtube.com/embed/p6go2GSJ4FM",
   "oncall_scheduler_mvp_thumbnail": "https://drive.google.com/uc?export=view&id=1nyd0dVYeGKNI7ErSPQa9mPffIw9Cq_pw",
-  "oncall_prototypes": "https://drive.google.com/uc?export=view&id=1COPAHP-Sn883u_67OBB3tQDJeYlVnY_q",
-  "oncall_state_tracking": "https://drive.google.com/uc?export=view&id=16hkzS4kWC8WEwsfSK3sQnS-wcCEaaWx1",
-  "oncall_proto_light_floating_chip": "https://drive.google.com/uc?export=view&id=1tLVkOjQe2rBoSFevEhNI9akx4mPzYiEg",
-  "oncall_proto_shift_detail": "https://drive.google.com/uc?export=view&id=1rQLSPWmTPz_8lXA5l6ySDESVBRE1rrje",
-  "oncall_proto_shift_detail_wire": "https://drive.google.com/uc?export=view&id=1flpt5RFRx6nzZWYIgMurYcRvSSuA1lbr",
+  "oncall_prototypes": "https://drive.google.com/uc?export=view&id=172RAskxqYJ0jTCUgy7k9nUiW_cIygMRs",
+  "oncall_prototypes_small": "https://drive.google.com/uc?export=view&id=1rEwIlZTzg3J9YB5NJbVFoBT1WxOh_HHL",
+  "oncall_state_tracking": "https://drive.google.com/uc?export=view&id=1s8VRQ1K0nzvXV8rJ3bkKcFey5t3-Fvwj",
+  "oncall_proto_light_floating_chip": "https://drive.google.com/uc?export=view&id=1MtE4bL5iCAsXTOavh6lwxj8oZLFp0PrJ",
+  "oncall_proto_shift_detail": "https://drive.google.com/uc?export=view&id=1Ef0VTkm5JrgF65-YcUHjcpAE-d-2v66a",
+  "oncall_proto_shift_detail_wire": "https://drive.google.com/uc?export=view&id=16O6ll911FYw9FmhM-MYX-rjCH8bsgBzW",
 
   "shift_editor_rates_thumbnail": "https://drive.google.com/uc?export=view&id=1b2ZPisXgdQOGctQT3U_J2wbYJbkAeEqd",
   "shift_editor_rates_media_link": "https://youtu.be/KYFfpM7xZ08",
   "shift_editor_rates_media_embed_link": "https://www.youtube.com/embed/KYFfpM7xZ08",
-  "shift_editor_rate_flow_documentation": "https://drive.google.com/uc?export=view&id=1tEFhD6fEI9dITPoZ-nKHLmBL0G_HTB1Y",
-  "shift_editor_rate_utilities": "https://drive.google.com/uc?export=view&id=1irwnyhSGx1WQuiOuwyMwzqdwkpdaL5f-",
+  "shift_editor_rate_flow_documentation": "https://drive.google.com/uc?export=view&id=16fEYegOlQR3jWL_3LcOQpUkETgG1Uvzo",
+  "shift_editor_rate_utilities": "https://drive.google.com/uc?export=view&id=1u4VIxWvwug8-VagbtgP_3grEhiIm-Qgv",
+  "shit_editor_rate_guide":"https://drive.google.com/uc?export=view&id=1NLj_UyDYdHsd6XeojBPIQ1Rv5Jh9eAJk",
+
+  "main_page":"https://drive.google.com/uc?export=view&id=1JmfWosFKEI69y3Ue54L90IYssnRxwAdv",
+  "responding_contacts":"https://drive.google.com/uc?export=view&id=1iD6t-EyGL-w-IKABWyO4tAInaAerhn2J",
+  "add_user":"https://drive.google.com/uc?export=view&id=1eWTT6RAYUZu56A-glWiZ_z3QG_Zy2OZH",
+  "stepper":"https://drive.google.com/uc?export=view&id=1qnbWmidVkw90XuGoDQjZ7k1BgUrSarvs",
+  "summary_page":"https://drive.google.com/uc?export=view&id=146a28ZRJi4BiCdxJlvN_wO_B8re6UDEr",
+  "site_build_thumbnail":"https://drive.google.com/uc?export=view&id=1CBkSE4PJGiADVLExQ43C75Hu8ylw_hVO",
+
+  "optimization_thumbnail":"https://drive.google.com/uc?export=view&id=1e7VKZ89P2Ev4zUbktZtFSCbL0rc7-QpT",
+  "optimization":"https://drive.google.com/uc?export=view&id=1HBomnB0YXzjHwdqXzAxQ4iYX-snjqmdP",
+}
+
+export const project_images = {
+  "home_page": "https://drive.google.com/uc?export=view&id=1Al4uDDwj8ZVkaehWrPLbexyLT2JncmIB",
+  "store_page": "https://drive.google.com/uc?export=view&id=1F97ROwTthYPCYhMfCGcFe9WqxhdHpAF4",
+  "product_detail_page": "https://drive.google.com/uc?export=view&id=1O2sj31toJCEXHCTsoPLb0XkQX01zFRK-",
+  "banner1":"https://drive.google.com/uc?export=view&id=1juyt-NOLGKNbeqJnRldsa10Sqzf46dXY",
+  "banner2":"https://drive.google.com/uc?export=view&id=1MiocvJ1UVhWThqUhn-bp_ZOjtIJGNqlh",
+  "banner3":"https://drive.google.com/uc?export=view&id=1UMoG-z-vINGnN6vKDWv5jq9Che6MVETv",
+  "colors1":"https://drive.google.com/uc?export=view&id=1StAZlLil8gqEwEylS6fmUwRriQUf0Txw",
+  "colors2":"https://drive.google.com/uc?export=view&id=1AkU7jDf0hu4NM03YPjSWRRRvlr0zYuHX",
+  "home_asside":"https://drive.google.com/uc?export=view&id=1nSLFKh942PtHSdO-hlqJmqXwroR-dbZi",
+  "filter1":"https://drive.google.com/uc?export=view&id=11KfTvAlDQYPGqXmOX3JccB-0aeFb9wxn",
+  "filter2":"https://drive.google.com/uc?export=view&id=1kBG40Dvab1aiSscJ-msIlA5c2tm-Bjue",
+  "store_nav":"https://drive.google.com/uc?export=view&id=1lzJ5dUPvrDuAd3b0b-cQzWvY4ghZFyFU"
+}
+
+export const about_images = {
+  "headshot":"https://drive.google.com/uc?export=view&id=15PTpMTctukYqaHTXYkubL9P5ISpwO0mZ"
 }

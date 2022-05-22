@@ -79,10 +79,10 @@ const Contact = () => {
             {/*</div>*/}
             {/*<input type="hidden" name="form-name" value="contact" />*/}
             <div className="contact-form-title">
-              Hire Me
+              Hope To Hear From You
             </div>
             <div className="contact-form-subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a justo et nisl pretium bibendum vel et nisi. Etiam libero felis, tincidunt sed mi sit amet, condimentum ornare risus. Sed ac dapibus lacus, lob
+              Thank you for visiting my portfolio. Please feel free to contact me anytime, either through this form or directly to seanmc2009@gmail.com.
             </div>
             <div className="contact-info-box-right">
               <div className="contact-info-txt">seanmc2009@gmail.com</div>

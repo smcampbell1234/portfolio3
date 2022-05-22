@@ -26,12 +26,18 @@ const Intro = (props) => {
 
       <div className="intro-text-holder">
         <h3 className="intro-header">Full Stack Developer</h3>
-        <i>My name is Sean Campbell and I love to code, design, and see a project grow into a developed life.</i>
+        {
+          !isTradMode &&
+          <h4><i>
+            Writes golden code, develops features, stomps bugs.
+          </i></h4>
+        }
         <div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et fringilla dui. Proin molestie ex vel
-          blandit posuere. Curabitur vel varius tellus, sit amet varius quam. Mauris posuere erat ipsum, at sagittis
-          justo consequat vitae. Curabitur imperdiet odio sed magna vehicula dictum. Etiam a vulputate libero. Nam
-          at sem eget lorem dapibus lobortis ac sed risus.
+          <p>
+            The artifacts found in this portfolio were collected from my professional work, personal creations, and class projects.
+            I have also included a comprehensive list of skills, my resume, skill badges, and an about section.
+            Please feel free to reach out to me if you have any questions.
+          </p>
         </div>
       </div>
     </div>
@@ -39,3 +45,4 @@ const Intro = (props) => {
 }
 
 export default Intro;
+

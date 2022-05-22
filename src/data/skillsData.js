@@ -2,13 +2,13 @@ import { FaBehance} from 'react-icons/fa'
 export const skills = [
   {
     id: 1,
-    skill: 'React JS',
+    skill: 'ReactJS',
     category: 'Front End',
     category_img: "image",
     proficiency: 90,
     frequency: "Daily",
     tags: ["front-end","language","ui","ux","library","FReMP"],
-    detail: "Lorem ipsum dolor sit condimentum sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Worked with ReactJS professionally on an enterprise application for two years. Wrote Class Components, Functional Components, hooks, along with many associated libraries. Also used ReactJS to built full sites, create features, and fixed bugs. Learned React from documentation, classes, books, and on the job.",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ export const skills = [
     proficiency: 75,
     frequency: "Weekly",
     tags: ["front-end","language","FReMP"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, um sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Worked with React Redux professionally on an enterprise application for two years, including transitioning code to latest versions. Learned React Redux from documentation, classes, books, and on the job.",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ export const skills = [
     proficiency: 25,
     frequency: "Weekly",
     tags: ["back-end","language","FReMP"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinar at justo eget, tempor condimentum sapien. Pellentesque habitant",
+    detail: "Worked on the Back-End of an enterprise application professionally for two years, though it was not my primary role. Wrote small apps in python. Learned Python from documentation, classes, books, and on the job.",
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ export const skills = [
     proficiency: 40,
     frequency: "Monthly",
     tags: ["back-end","database","language","FReMP"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinar at justo eget, tempor condimentum sapienenectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Worked with MongoDB on an enterprise application professionally for two years. Learned MongoDB from documentation, classes, and on the job.",
   },
   {
     id: 5,
@@ -48,7 +48,7 @@ export const skills = [
     proficiency: 50,
     frequency: "Monthly",
     tags: ["back-end","server","language","FReMP"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinar at justo eget, tempor condimentum sapien. Pellentesque habitant moturpis egestas. Vestibulum eu",
+    detail: "Used Flask Python framework for two years on an enterprise application for two years. Learned Flask through documentation, classes, and on the job",
   },
   {
     id: 6,
@@ -58,7 +58,7 @@ export const skills = [
     proficiency: 50,
     frequency: "Monthly",
     tags: ["back-end","language"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo.",
+    detail: "Used Swagger on an enterprise application for two years as an API in the FReMP stack. Used it to connect a ReactJS front-end with a Python back-end. Worked with Swagger v.2 and v.3. Learned Swagger through documentation, classes, and on the job",
   },
   {
     id: 7,
@@ -68,7 +68,7 @@ export const skills = [
     proficiency: 95,
     frequency: "Daily",
     tags: ["front-end","language","ui","ux"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinar at justo eget, tempor condimentum sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "At the basis of all my web development.",
   },
   {
     id: 8,
@@ -78,7 +78,7 @@ export const skills = [
     proficiency: 95,
     frequency: "Daily",
     tags: ["front-end","language","ui","ux"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinartant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "At the basis of all my web development, including flex box, grid, and parallax",
   },
   {
     id: 9,
@@ -88,7 +88,7 @@ export const skills = [
     proficiency: 95,
     frequency: "Daily",
     tags: ["front-end","language","ui","ux","LAMP"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinsapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "At the basis of all my web development, including ReactJS, jQuery, Node.js. Learned Javascript from documentation, college classes, books, and on the job.",
   },
   {
     id: 10,
@@ -98,7 +98,7 @@ export const skills = [
     proficiency: 95,
     frequency: "Years +",
     tags: ["front-end","language","ui","ux","library"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit da fames ac turpis egestas. Vestibulum eu",
+    detail: "Learned jQuery in college and wrote more than ten applications with it.",
   },
   {
     id: 11,
@@ -108,7 +108,7 @@ export const skills = [
     proficiency: 75,
     frequency: "Years +",
     tags: ["back-end","server","formal-training","language","LAMP"],
-    detail: "Lorem ipsum dolor sit amet, consectet= istique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Learned PHP in college and wrote more than ten applications with it.",
   },
   {
     id: 12,
@@ -118,7 +118,7 @@ export const skills = [
     proficiency: 75,
     frequency: "Years +",
     tags: ["back-end","database","formal-training","language","LAMP"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinar at justo eget, tempor condimentum sapien. Pa fames ac turpis egestas. Vestibulum eu",
+    detail: "Learned MySQL in college and wrote more than ten applications with it.",
   },
   {
     id: 13,
@@ -128,7 +128,7 @@ export const skills = [
     proficiency: 5,
     frequency: "Years +",
     tags: ["back-end","server","language","LAMP"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing ",
+    detail: "Took a class in college on UNIX.",
   },
   {
     id: 14,
@@ -138,7 +138,7 @@ export const skills = [
     proficiency: 10,
     frequency: "Years +",
     tags: ["back-end","server","language","LAMP"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Used Apache to work with PHP and MySQL",
   },
   {
     id: 15,
@@ -148,7 +148,7 @@ export const skills = [
     proficiency: 60,
     frequency: "Monthly",
     tags: ["front-end","language","ui","ux"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tell que habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Used Sass for two years to style an enterprise application.",
   },
   {
     id: 16,
@@ -158,7 +158,7 @@ export const skills = [
     proficiency: 70,
     frequency: "Years +",
     tags: ["front-end","language","formal-training"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinar at justo eget, tempor condimentum sapien. Pellenda fames ac turpis egestas. Vestibulum eu",
+    detail: "Learned C in collage while studying for a Computer Science degree.",
   },
   {
     id: 17,
@@ -168,7 +168,7 @@ export const skills = [
     proficiency: 70,
     frequency: "Years +",
     tags: ["front-end","language","formal-training"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinar at justo eget, tempor condimentum sapien. Pellentesque het netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Learned C++ in collage while studying for a Computer Science degree, used it to learn Assembly.",
   },
   {
     id: 18,
@@ -178,7 +178,17 @@ export const skills = [
     proficiency: 70,
     frequency: "Years +",
     tags: ["front-end","paradigm","formal-training","language"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinar at justo eget, tem netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Learned Java in collage while studying for a Computer Science degree, used it to learn Data Structures.",
+  },
+  {
+    id: 181,
+    skill: 'Data Structures',
+    category: 'Front End',
+    category_img: "image",
+    proficiency: 70,
+    frequency: "Years +",
+    tags: ["front-end","paradigm","formal-training","language"],
+    detail: "Learned Data Structures in collage while studying for a Computer Science degree.",
   },
   {
     id: 19,
@@ -188,7 +198,7 @@ export const skills = [
     proficiency: 50,
     frequency: "Daily",
     tags: ["testing","language"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. istique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Professionally wrote more than 80 Selenium Behavior Driven Development tests over two years working on an enterprise application. Learned Selenium from documentation, classes, and on the job.",
   },
   {
     id: 20,
@@ -198,7 +208,7 @@ export const skills = [
     proficiency: 70,
     frequency: "Daily",
     tags: ["testing"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinar at justo eget, tempor condimentum sapiebitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Wrote approximately 50 tests using MABL technology. Learned MABL from documentation, classes, and on the job.",
   },
   {
     id: 21,
@@ -208,7 +218,7 @@ export const skills = [
     proficiency: 25,
     frequency: "Yearly",
     tags: ["testing","language"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinar at justo eget, temporpien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Created unit tests using Enzyme and Jest mostly on my own applications. Learned Enzyme and Jest through classes and books.",
   },
   {
     id: 22,
@@ -218,7 +228,7 @@ export const skills = [
     proficiency: 25,
     frequency: "Yearly",
     tags: ["testing","language"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinar at justo eget, temporpien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Created unit tests using Enzyme and Jest mostly on my own applications. Learned Enzyme and Jest through classes and books.",
   },
   {
     id: 23,
@@ -228,7 +238,7 @@ export const skills = [
     proficiency: 25,
     frequency: "Yearly",
     tags: ["front-end","paradigm","ui","ux"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinar at j s et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Created one-screen scroller sites using the parallax design paradigm.",
   },
   {
     id: 24,
@@ -238,7 +248,7 @@ export const skills = [
     proficiency: 65,
     frequency: "Daily",
     tags: ["front-end","paradigm","formal-training"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinar at justo eget, tempor condimentum sapien. Pellentesque habitant morbi tristique sec turpis egestas. Vestibulum eu",
+    detail: "Professionally pushed and submitted Pull Requests daily/weekly for two years while work on an enterprise application. Learned Github through documentation and on the job.",
   },
   {
     id: 25,
@@ -248,7 +258,7 @@ export const skills = [
     proficiency: 75,
     frequency: "Daily",
     tags: ["documentation","wiki"],
-    detail: "DETAIL: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Upien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Used Notion to create a documentation Wiki for an enterprise application. Learned Notion through documentation, classes, and seminars.",
   },
   {
     id: 26,
@@ -258,7 +268,7 @@ export const skills = [
     proficiency: 30,
     frequency: "Daily",
     tags: ["documentation","wiki"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvmpor condimentum sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Used Kipwise as a Wiki for an enterprise application.",
   },
   {
     id: 27,
@@ -268,7 +278,7 @@ export const skills = [
     proficiency: 75,
     frequency: "Daily",
     tags: ["mockup","design"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinar at juston morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Used Sketch professionally for two years to create designs, mockups, and info-graphics to plan, design, and document an enterprise application. Learned Sketch through documentation and classes.",
   },
   {
     id: 28,
@@ -278,7 +288,7 @@ export const skills = [
     proficiency: 20,
     frequency: "Daily",
     tags: ["mockup","design"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, ectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Used Lucid for six months to create flow charts and decision trees for an enterprise application. Learned Lucid through documentation and classes.",
   },
   {
     id: 29,
@@ -288,7 +298,7 @@ export const skills = [
     proficiency: 75,
     frequency: "Years +",
     tags: ["mockup","design"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinar at justo eget, tempor condimentum sapien. Pellentesque habada fames ac turpis egestas. Vestibulum eu",
+    detail: "Learned Photoshop in college and used it to design images and edit photos for ten applications.",
   },
   {
     id: 30,
@@ -298,7 +308,7 @@ export const skills = [
     proficiency: 25,
     frequency: "Bi-Yearly",
     tags: ["mockup","design"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, enectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Learned GIMP (open source 'Photoshop') to design images and edit photos for personal projects.",
   },
   {
     id: 31,
@@ -308,7 +318,7 @@ export const skills = [
     proficiency: 10,
     frequency: "Yearly",
     tags: ["mockup","design"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinar at justo eget, tempor condimentumada fames ac turpis egestas. Vestibulum eu",
+    detail: "Used Draw.io to work on simple designs for online programming classes.",
   },
   {
     id: 32,
@@ -318,7 +328,7 @@ export const skills = [
     proficiency: 15,
     frequency: "Yearly",
     tags: ["sandbox"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvi n. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Learned Codepen.io to write and tests small snippets.",
   },
   {
     id: 33,
@@ -328,7 +338,7 @@ export const skills = [
     proficiency: 50,
     frequency: "Daily",
     tags: ["project-management","paradigm"],
-    detail: "Lorem ipsum dolor sit amet, consectetur m sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Practiced Agile development professionally for two years. Learned Agile on the job and through private study.",
   },
   {
     id: 34,
@@ -338,7 +348,7 @@ export const skills = [
     proficiency: 75,
     frequency: "Weekly",
     tags: ["third-party","ui","ux"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinar at justo eget, tempor condimentum sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Used Third-Party Material UI across an entire enterprise application. Learned Material UI through documentation and on the job.",
   },
   {
     id: 35,
@@ -348,7 +358,7 @@ export const skills = [
     proficiency: 50,
     frequency: "Daily",
     tags: ["third-party","ui","ux"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinar at tant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Used Third-Party PrimeReact for a 26-screen application. Learned ReactPrime through documentation and on the job.",
   },
   {
     id: 36,
@@ -358,7 +368,7 @@ export const skills = [
     proficiency: 50,
     frequency: "Weekly",
     tags: ["back-end","database","database-management"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinar at jusique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Used Studio 3T professionally for two years to manage MongoDB for an enterprise application. Learned Studio 3T through documentation and on the job.",
   },
   {
     id: 37,
@@ -368,7 +378,7 @@ export const skills = [
     proficiency: 50,
     frequency: "Daily",
     tags: ["tool","support"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinar at justo eget, tempor condimentum sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Used Freshdesk for two years professionally to manage support emails for an enterprise application. Learned Freshdesk on the job.",
   },
   {
     id: 38,
@@ -378,7 +388,7 @@ export const skills = [
     proficiency: 90,
     frequency: "Daily",
     tags: ["tool","support"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinar at justo eget, tempor condimentum sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Personally and professionally used Google Workspace applications such as Google Docs, Sheets, and Slides.",
   },
   {
     id: 39,
@@ -388,6 +398,6 @@ export const skills = [
     proficiency: 90,
     frequency: "Daily",
     tags: ["tool","support"],
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinar at justo eget, tempor condimentum sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eu",
+    detail: "Personally and professionally used Microsoft Office applications such as Microsoft Word, Excel, and PowerPoint, along with Microsoft 365. Earned Microsoft competency certifications in college.",
   },
 ]

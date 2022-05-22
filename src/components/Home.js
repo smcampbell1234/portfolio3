@@ -5,7 +5,7 @@ import Demo from './Demo'
 import Badges from './Badges'
 import Skills from './Skills'
 import Contact from './Contact'
-import Resume from './Resume'
+import About from './About'
 import Fade from 'react-reveal/Fade'
 
 const Home = (props) => {
@@ -18,7 +18,7 @@ const Home = (props) => {
         <Demo />
         <Badges />
         <Skills windowDimensions={windowDimensions} />
-        <Resume />
+        <About />
         <Contact />
       {/*</Fade>*/}
     </React.Fragment>

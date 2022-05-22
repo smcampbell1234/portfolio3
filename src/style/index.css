@@ -352,6 +352,9 @@ Project Chip
   justify-content: center;
   /*margin: 0 4% 0 4%;*/
   margin: var(--chip-margin);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1150px;
 }
 .proj-container {
   display: flex;
@@ -364,7 +367,8 @@ Project Chip
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   overflow: hidden;
-  height: 100%;
+  /*height: 100%;*/
+  height: 425px;
   color: var(--clr-primary-2);
 }
 .proj-container:hover {
@@ -705,10 +709,6 @@ Skill Detail
   font-size: 1.1rem;
   padding: 8px 8px 8px 35px;
 }
-.skills-detail-title {
-  color: var(--clr-primary-2);
-  font-size: 1.4rem;
-}
 /* ---------------
 Skill Pager Bar
 --------------- */
@@ -757,6 +757,9 @@ Demo Section
   margin: var(--chip-margin);
   text-decoration: none;
   color: black;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1150px;
 }
 .demo-chip-wrapper {
   border: 1px solid var(--border-color);
@@ -846,6 +849,10 @@ Demo Detail
   font-size: 1.4rem;
   font-weight: bold;
   margin-top: 10px;
+}
+.layout-faux-line-space {
+  min-height: 50px;
+  padding: 25px;
 }
 .demo-media-link {
   font-size: .7rem;
@@ -940,6 +947,16 @@ Badges Section
   height: 13px;
   width: 10px;
 }
+.header-faux-space-left {
+  height: 13px;
+  width: 10%;
+  outline: 1px solid lime;
+}
+.header-faux-space-right {
+  height: 13px;
+  width: 10%;
+  outline: 1px solid lime;
+}
 .badge-progress-bar-inner {
   background-color: var(--clr-green-dark);
   height: 13px;
@@ -958,6 +975,24 @@ Badges Section
   text-align: center;
   margin-top: 10px;
 }
+
+/* ---------------
+ABout Section
+--------------- */
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1150px;
+  align-items: center;
+}
+.about-right {
+  width: 60%;
+  text-align: left;
+  margin-left: 15px;
+}
+
 
 /* ---------------
 Contact Section
@@ -1053,6 +1088,38 @@ Contact Section
     cursor: pointer;
     background-color: var(--clr-primary-3);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---------------
 Placeholder
 --------------- */

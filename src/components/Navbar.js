@@ -10,8 +10,7 @@ const Navbar = (props) => {
   const linksContainerRef = useRef(null)
   const linksRef = useRef(null)
   const location = useLocation()
-  const [isDemo,setIsDemo] = useState(false)
-
+  const [isDetailPage,setIsDetailPage] = useState(false)
 
   // let header_logo = "https://drive.google.com/uc?export=view&id=15YGcJ6NOMwlU-GTvh6uMqwZt-s-CrRzM";
   let header_logo = "https://drive.google.com/uc?export=view&id=1gwwZZuk0hZiOsKA3BwHzRLm2YnU8h_QF"
@@ -27,48 +26,59 @@ const Navbar = (props) => {
   },[showLinks])
 
   useEffect(() => {
-    let isDemoScreen = window.location.href.includes("demo")
-    setIsDemo(isDemoScreen)
+    let windowURL = window.location.href;
+    let isDetail = windowURL.includes("demo") || windowURL.includes("project/")
+    setIsDetailPage(isDetail)
   }, [location])
 
   return (
     <nav className="nav-container">
       <div className="nav-center">
-        <div className="nav-header">
-          <Link to={"/"}>
-            <img src={header_logo} height="45px" width="180px" alt="header logo"/>
-          </Link>
-          <button className='nav-toggle' onClick={() => setShowLinks(!showLinks)}>
-            <FaBars />
-          </button>
-        </div>
+          <div className="nav-header">
+              <Link to={"/"}>
+                <img src={header_logo} height="45px" width="180px" alt="header logo"/>
+              </Link>
 
-          <div className="links-container" ref={linksContainerRef}>
+            {!isDetailPage &&
+              <button className='nav-toggle' onClick={() => setShowLinks(!showLinks)}>
+                <FaBars/>
+              </button>
+            }
+          </div>
+
+          <div className="links-container" ref={linksContainerRef} style={{
+            display: isDetailPage ? "none" : ""
+          }}>
             <ul className="links" ref={linksRef}>
               {
                 links.map((link) => {
                   const {id, text, url} = link;
-                  return <li key={id} onClick={() => {
+                  return (
+                    <li key={text} onClick={() => {
                     document.getElementById(text).scrollIntoView({behavior: "smooth", block: "start"})
                   }}
                   >
-                    {!!url ?
-                      <a href={url} target="_blank">{text}</a>
-                      :
-                      <a>{text}</a>
-                    }
+                      {!!url ?
+                        <a href={url} target="_blank">{text}</a>
+                        :
+                        <a style={{
+                          cursor: isDetailPage ? "auto" : "pointer",
+                          color: isDetailPage ? "gray" : "",
+                        }}>{text}</a>
+                      }
                   </li>
+                )
                 })
               }
             </ul>
           </div>
 
-        { isDemo &&
+        { isDetailPage &&
           <BackButton />
         }
 
         {
-          windowDimensions.windowWidth > windowDimensions.mediaQuery1 &&
+          windowDimensions.windowWidth > windowDimensions.mediaQuery1 && !isDetailPage &&
           <div>
             <label className="switch">
               <input

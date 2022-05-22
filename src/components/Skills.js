@@ -257,7 +257,7 @@ const Skills = (props) => {
                   {
                     (selectedSkills.includes(id) || showDetails) &&
                     <div className="skills-row-detail">
-                      <span className="skills-detail-title">Detail:</span>&nbsp;{detail}
+                      {detail}
                     </div>
                   }
                 </div>
