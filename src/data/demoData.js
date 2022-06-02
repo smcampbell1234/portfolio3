@@ -354,43 +354,144 @@ export const demos = [
       },
     ],
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   {
     id: 203,
-    title: "Test Demo 3",
-    thumbnail: "shift_editor_rates_thumbnail",
-    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus leo, pulvinar at justo eget, tempor condimentum sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada",
+    title: "Star Rating - Employee Score",
+    thumbnail: "star_rating_thumbnail",
+    summary: "A dialog to help support staff managed employee scores, including seeing all details for employee scores and assigning stars (kudos) for an employee shift.",
     callouttitle: "Technology",
     callouttext: "Full Stack, React JS, Hooks, Python, Mongo NoSQL DB, notifications, Sass, HTML5, CSS3",
     feature: true,
-    show: false,
+    show: true,
     date: "2022-01-09",
-    details: [],
+    details: [
+      {
+        type: "text-wide-top",
+        media: null,
+        media_link: null,
+        media_embed_link: null,
+        title: "hr-line",
+        title_align: "center",
+        text1: null,
+        text2: null,
+        asside: null,
+        asside_align: null,
+      },
+      {
+        type: "text-wide-top",
+        media: null,
+        media_link: null,
+        media_embed_link: null,
+        title: "STAR RATING - EMPLOYEE SCORE",
+        title_align: "center",
+        text1: null,
+        text2: null,
+        asside: null,
+        asside_align: null,
+      },
+      {
+        type: "text-wide-top",
+        media: null,
+        media_link: null,
+        media_embed_link: null,
+        title: "hr-line",
+        title_align: "center",
+        text1: null,
+        text2: null,
+        asside: null,
+        asside_align: null,
+      },
+      {
+        type: "text-wide-bottom",
+        media: "image",
+        media_link: demo_images.star_rating_not_override,
+        media_embed_link: null,
+        title: "Dialog to manage employee rating scores",
+        title_align: "left",
+        text1: "Employees were sending support tickets and calling support to learn why their score had gone down. Support did not have a way to see score data. This dialog was created to show actions that impacted the employee score. It also allows support/internal to give out stars (kudos) to employees. Employees can be given up and down votes by the facility they worked at. They also have objective measurables such as cancellations, no shows, and lates. Stars can be given by internal staff as a small boost to the score for that shift. The score can also be overridden for a 40-day period.",
+        text2: null,
+        asside: null,
+        asside_align: null,
+      },
+      {
+        type: "text-wide-bottom",
+        media: "image",
+        media_link: demo_images.star_rating_override,
+        media_embed_link: null,
+        title: "Employee score has been overriden for 40 days",
+        title_align: "left",
+        text1: "During the rollout of employee scores, employees found they had collected an unrecoverable amount of ‘hits’ on their record. The scores roll off after 40 days. So an override assigns them 85 points for 40 days, giving the employee a chance to clear their down-votes/hits and collect up-votes. After 40 days, they are assigned their actual score. The above example shows an override. Since the employee's actual score of 96 is higher than 85, he keeps his actual score. If his score had been lower than 85, he would have an received a score of 85 for 40 days.",
+        text2: null,
+        asside: null,
+        asside_align: null,
+      },
+      {
+        type: "text-wide-top",
+        media: null,
+        media_link: null,
+        media_embed_link: null,
+        title: "hr-line",
+        title_align: "center",
+        text1: null,
+        text2: null,
+        asside: null,
+        asside_align: null,
+      },
+      {
+        type: "text-wide-top",
+        media: null,
+        media_link: null,
+        media_embed_link: null,
+        title: "MOCHUP",
+        title_align: "center",
+        text1: null,
+        text2: null,
+        asside: null,
+        asside_align: null,
+      },
+      {
+        type: "text-wide-top",
+        media: null,
+        media_link: null,
+        media_embed_link: null,
+        title: "hr-line",
+        title_align: "center",
+        text1: null,
+        text2: null,
+        asside: null,
+        asside_align: null,
+      },
+      {
+        type: "text-wide-bottom",
+        media: "image",
+        media_link: demo_images.star_rating_mochup,
+        media_embed_link: null,
+        title: "",
+        title_align: "left",
+        text1: "This is an initial mochup. Slight changes (as seen when comparing with actual images above) were made from design reviews with dev team and client.",
+        text2: null,
+        asside: null,
+        asside_align: null,
+      },
+    ],
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   {
     id: 204,
     title: "Test Demo 4",

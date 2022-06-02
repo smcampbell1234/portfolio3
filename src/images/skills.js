@@ -109,6 +109,11 @@ export const demo_images = {
 
   "optimization_thumbnail":"https://drive.google.com/uc?export=view&id=1e7VKZ89P2Ev4zUbktZtFSCbL0rc7-QpT",
   "optimization":"https://drive.google.com/uc?export=view&id=1HBomnB0YXzjHwdqXzAxQ4iYX-snjqmdP",
+
+  "star_rating_thumbnail":"https://drive.google.com/uc?export=view&id=1MixJmxF_vVp2VvZrW1f3IIfWV2JpAkj6",
+  "star_rating_mochup":"https://drive.google.com/uc?export=view&id=1r1BNX2feLeqnHNBqfhY7VaxP9Qkh4eFl",
+  "star_rating_not_override":"https://drive.google.com/uc?export=view&id=1VzjykGS32DybKbxPv4hnGzowY2c3Z2FA",
+  "star_rating_override":"https://drive.google.com/uc?export=view&id=1OZAOgTD9lRSxRMWPEoRXSo_2FBGuX0L_",
 }
 
 export const project_images = {
