@@ -92,6 +92,7 @@ export const demo_images = {
   "oncall_proto_light_floating_chip": "https://drive.google.com/uc?export=view&id=1MtE4bL5iCAsXTOavh6lwxj8oZLFp0PrJ",
   "oncall_proto_shift_detail": "https://drive.google.com/uc?export=view&id=1Ef0VTkm5JrgF65-YcUHjcpAE-d-2v66a",
   "oncall_proto_shift_detail_wire": "https://drive.google.com/uc?export=view&id=16O6ll911FYw9FmhM-MYX-rjCH8bsgBzW",
+  "oncall_proto_intuitive_rubric":"https://drive.google.com/uc?export=view&id=1guwvR6LGmZGz6pIOLBWJBrv1Hfc5wcPa",
 
   "shift_editor_rates_thumbnail": "https://drive.google.com/uc?export=view&id=1b2ZPisXgdQOGctQT3U_J2wbYJbkAeEqd",
   "shift_editor_rates_media_link": "https://youtu.be/KYFfpM7xZ08",
@@ -99,6 +100,7 @@ export const demo_images = {
   "shift_editor_rate_flow_documentation": "https://drive.google.com/uc?export=view&id=16fEYegOlQR3jWL_3LcOQpUkETgG1Uvzo",
   "shift_editor_rate_utilities": "https://drive.google.com/uc?export=view&id=1u4VIxWvwug8-VagbtgP_3grEhiIm-Qgv",
   "shit_editor_rate_guide":"https://drive.google.com/uc?export=view&id=1NLj_UyDYdHsd6XeojBPIQ1Rv5Jh9eAJk",
+  "shift_editor_rate_intuitive_rubric":"https://drive.google.com/uc?export=view&id=1vmSaQdH-AqqwoUtFoZY6CAgPk0tQBPnm",
 
   "main_page":"https://drive.google.com/uc?export=view&id=1JmfWosFKEI69y3Ue54L90IYssnRxwAdv",
   "responding_contacts":"https://drive.google.com/uc?export=view&id=1iD6t-EyGL-w-IKABWyO4tAInaAerhn2J",
@@ -114,6 +116,7 @@ export const demo_images = {
   "star_rating_mochup":"https://drive.google.com/uc?export=view&id=1r1BNX2feLeqnHNBqfhY7VaxP9Qkh4eFl",
   "star_rating_not_override":"https://drive.google.com/uc?export=view&id=1VzjykGS32DybKbxPv4hnGzowY2c3Z2FA",
   "star_rating_override":"https://drive.google.com/uc?export=view&id=1OZAOgTD9lRSxRMWPEoRXSo_2FBGuX0L_",
+  "star_rating_intuitive_rubric":"https://drive.google.com/uc?export=view&id=1Ty5DfS6oO1Gs6am9m26FuzdO4w9IQIQi",
 }
 
 export const project_images = {
