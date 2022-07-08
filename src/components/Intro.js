@@ -34,7 +34,12 @@ const Intro = (props) => {
         }
         <div>
           <p>
-            The artifacts found in this portfolio were collected from my professional work, personal creations, and class projects.
+            Thank you for visiting my portfolio. Below are some of my recent projects and pieces of work.
+            Even this portfolio, itself, demonstrates some of my latest ReactJS code. If you would like to see the actual code, there is a link in the navbar
+            above. There is also a link to my e-commerce store in the Projects Section header.
+            <br/>
+            <br/>
+            The artifacts found below were collected from my professional work, personal creations, and class projects.
             I have also included a comprehensive list of skills, my resume, skill badges, and an about section.
             Please feel free to reach out to me if you have any questions.
           </p>

@@ -93,6 +93,14 @@ const Navbar = (props) => {
           </div>
         }
 
+        {
+          windowDimensions.windowWidth > windowDimensions.mediaQuery1 && !isDetailPage &&
+          <div>
+            <a className="nav-do-not-press" href={"https://github.com/smcampbell1234/portfolio3"} target="_blank" >Portfolio Code</a>
+          </div>
+        }
+
+
         <ul className="social-icons">
           {
             social.map((socialIcon) => {

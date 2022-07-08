@@ -8,7 +8,12 @@ const Projects = () => {
     <React.Fragment>
       <div id="projects" className="section-header-wrapper">
         <div className="section-header">Projects</div>
-        <div className="section-subheader">Feature projects demonstrate coding skills.</div>
+        <div className="section-subheader">
+          {/*Feature projects demonstrate coding skills.*/}
+           <a href={"https://github.com/smcampbell1234/furniture-e-commerce-store-"} target="_blank">
+             E-Commerce Store GitHub Code
+           </a>
+        </div>
       </div>
       <div id="projects-section" className="projects-section-container">
         {

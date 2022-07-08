@@ -58,10 +58,10 @@ const Contact = () => {
             style={{ filter: "opacity(0.7)" }}
             src="https://www.google.com/maps/embed/v1/place?q=point+loma+san+diego&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
-          <div className="contact-info-box-left">
-            <div className="contact-info-txt">seanmc2009@gmail.com</div>
-            <div className="contact-info-txt">San Diego, CA</div>
-          </div>
+          {/*<div className="contact-info-box-left">*/}
+          {/*  <div className="contact-info-txt">seanmc2009@gmail.com</div>*/}
+          {/*  <div className="contact-info-txt">San Diego, CA</div>*/}
+          {/*</div>*/}
         </div>
         <div className="contact-form">
           <form
@@ -82,56 +82,63 @@ const Contact = () => {
               Hope To Hear From You
             </div>
             <div className="contact-form-subtitle">
-              Thank you for visiting my portfolio. Please feel free to contact me anytime, either through this form or directly to seanmc2009@gmail.com.
+              {/*Thank you for visiting my portfolio. Please feel free to contact me anytime, either through this form or directly to seanmc2009@gmail.com.*/}
+              Thank you for visiting my portfolio. Please feel free to contact me anytime.
             </div>
-            <div className="contact-info-box-right">
-              <div className="contact-info-txt">seanmc2009@gmail.com</div>
-              <div className="contact-info-txt">San Diego, CA</div>
+            {/*<div className="contact-info-box-right">*/}
+            {/*  <div className="contact-info-txt">seanmc2009@gmail.com</div>*/}
+            {/*  <div className="contact-info-txt">San Diego, CA</div>*/}
+            {/*</div>*/}
+            <br />
+            <br />
+            <br />
+            <div style={{textAlign:"center", fontSize:"1.6rem",fontWeight:"bold"}}>
+              seanmc2009@gmail.com
             </div>
-            <div>
-              <label htmlFor="name" className="contact-form-label">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                className="contact-form-input"
-                onChange={(e) => setName(e.target.value)}
-                name="name"
-              />
-            </div>
+            {/*<div>*/}
+            {/*  <label htmlFor="name" className="contact-form-label">*/}
+            {/*    Name*/}
+            {/*  </label>*/}
+            {/*  <input*/}
+            {/*    type="text"*/}
+            {/*    id="name"*/}
+            {/*    className="contact-form-input"*/}
+            {/*    onChange={(e) => setName(e.target.value)}*/}
+            {/*    name="name"*/}
+            {/*  />*/}
+            {/*</div>*/}
 
-            <div>
-              <label htmlFor="email" className="contact-form-label">
-                Email
-              </label>
-              <input
-                type="text"
-                id="email"
-                className="contact-form-input"
-                onChange={(e) => setEmail(e.target.value)}
-                name="email"
-              />
-            </div>
+            {/*<div>*/}
+            {/*  <label htmlFor="email" className="contact-form-label">*/}
+            {/*    Email*/}
+            {/*  </label>*/}
+            {/*  <input*/}
+            {/*    type="text"*/}
+            {/*    id="email"*/}
+            {/*    className="contact-form-input"*/}
+            {/*    onChange={(e) => setEmail(e.target.value)}*/}
+            {/*    name="email"*/}
+            {/*  />*/}
+            {/*</div>*/}
 
-            <div>
-              <label htmlFor="message" className="contact-form-label">
-                Message
-              </label>
-              <textarea
-                type="text"
-                id="email"
-                className="contact-form-input contact-message"
-                onChange={(e) => setEmail(e.target.value)}
-                name="message"
-              />
-            </div>
-            <button
-              type="submit"
-              className="contact-form-submit"
-            >
-              Submit
-            </button>
+            {/*<div>*/}
+            {/*  <label htmlFor="message" className="contact-form-label">*/}
+            {/*    Message*/}
+            {/*  </label>*/}
+            {/*  <textarea*/}
+            {/*    type="text"*/}
+            {/*    id="email"*/}
+            {/*    className="contact-form-input contact-message"*/}
+            {/*    onChange={(e) => setEmail(e.target.value)}*/}
+            {/*    name="message"*/}
+            {/*  />*/}
+            {/*</div>*/}
+            {/*<button*/}
+            {/*  type="submit"*/}
+            {/*  className="contact-form-submit"*/}
+            {/*>*/}
+            {/*  Submit*/}
+            {/*</button>*/}
           </form>
 
 

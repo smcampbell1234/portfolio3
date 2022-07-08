@@ -1008,7 +1008,8 @@ Contact Section
   margin-left: auto;
 }
 .contact-google-map_wrapper {
-  width: 65%;
+  width: 45%; /*65%;*/
+  height: 400px;
   display: flex;
   justify-content: flex-end;
   position: relative;

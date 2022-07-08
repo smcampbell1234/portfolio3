@@ -36,11 +36,11 @@ export const projects = [
     // button1path: "#",
     // button2text: "Open App",
     // button2path: "https://efurniturestore.netlify.app/",
-    // footerlinks: [
-    //   {text: "snippet", url: 'https://www.twitter.com', icon: <FiCodesandbox />,},
-    //   {text: "docs", url: 'https://www.twitter.com', icon: <SiNotion />,},
-    //   {text: "source", url: 'https://www.twitter.com', icon: <AiFillGithub />,},
-    // ],
+    footerlinks: [
+      // {text: "snippet", url: 'https://www.twitter.com', icon: <FiCodesandbox />,},
+      // {text: "docs", url: 'https://www.twitter.com', icon: <SiNotion />,},
+      // {text: "source", url: 'https://github.com/smcampbell1234/furniture-e-commerce-store-', icon: <AiFillGithub />,},
+    ],
     show: true,
     details: [
       {
